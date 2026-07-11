@@ -1,3 +1,6 @@
+// IMPORTS //
+import '../styles/Community.css'
+
 function Community() {
   return (
     <main>

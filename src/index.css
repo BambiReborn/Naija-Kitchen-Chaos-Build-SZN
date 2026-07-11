@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --font-family: 'League Spartan', sans-serif;
+  --background-color: #201616;
+  --slide-BTN-bg-color: #332F2F;
+  --BTNs-writeup-and-borders-orange: #FFB54D;
+  --heading-fonts-color: #FFFFFF;
+  --pTags-font-color: #ADACAC;
+  --green-color: #83CD55;
+  --red-color: #FD3134;
+}
+
+body {
+  margin: 0px 50px 0px 50px;
+}

@@ -1,3 +1,6 @@
+// IMPORTS //
+import '../styles/Characters.css'
+
 function Characters() {
   return (
     <main>

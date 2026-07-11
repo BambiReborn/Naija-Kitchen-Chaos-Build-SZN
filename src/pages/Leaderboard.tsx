@@ -1,3 +1,6 @@
+// IMPORTS //
+import '../styles/Leaderboard.css'
+
 function Leaderboard() {
   return (
     <main>
