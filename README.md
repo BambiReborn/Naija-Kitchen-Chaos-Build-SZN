@@ -1,75 +1,148 @@
-# React + TypeScript + Vite
+# 🍳 Naija Kitchen Chaos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A chaotic multiplayer Nigerian cooking game where you cook fast, serve authentic cuisines against all odds, before everything burns!
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+Click below to access the live site:  
+[Naija Kitchen Chaos](https://naija-kitchen-chaos.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎮 About the Game
+Naija Kitchen Chaos is a fast-paced multiplayer cooking game where players team up or compete to prepare authentic Nigerian dishes in increasingly chaotic kitchens. From small bukas to bustling restaurants, the heat never stops.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React** + **TypeScript** + **Vite**
+- **React Router DOM** — page navigation
+- **Plain CSS** — per-page and component styling
+- **Web3Forms** — newsletter form submission
+- **Vercel** — deployment
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
+src/
+├── pages/
+│   ├── Home.tsx
+│   ├── About.tsx
+│   ├── Leaderboard.tsx
+│   ├── Community.tsx
+│   └── Characters.tsx
+├── components/
+│   ├── Header.tsx
+│   └── Footer.tsx
+├── assets/
+│   ├── home/
+│   ├── about/
+│   ├── leaderboard/
+│   ├── community/
+│   ├── characters/
+│   └── shared/
+├── styles/
+│   ├── Home.css
+│   ├── About.css
+│   ├── Leaderboard.css
+│   ├── Community.css
+│   ├── Characters.css
+│   ├── Header.css
+│   └── Footer.css
+├── index.css
+├── App.tsx
+└── main.tsx
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js installed
+- Git installed
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/BambiReborn/Naija-Kitchen-Chaos-Build-SZN.git
+
+# Navigate into the project
+cd Naija-Kitchen-Chaos-Build-SZN
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open `http://localhost:5173/` in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+## 🌿 Git Workflow
+1. Clone the repo
+2. Create your own branch
+```bash
+git checkout -b your-branch-name
 ```
+3. Work on your assigned page
+4. Push your branch and open a Pull Request to `main`
+5. The team lead reviews and merges
+
+---
+
+## 👥 Team
+
+### Product Owner
+| Name | Role |
+|------|------|
+| Ebuka Nwaudah | Product Manager |
+
+### Development
+| Name | Role |
+|------|------|
+| Tobechukwu Aki | Development Team Lead |
+
+### Game Development
+| Name | Role |
+|------|------|
+| Tobechukwu Aki | Game Dev. and Lead |
+| Jachike Ibeneme | Game Dev. |
+| Nduche Anidi | Game Dev. |
+
+### Frontend Development
+| Name | Role |
+|------|------|
+| Chukwuemeka Udeh | Frontend Dev. and Lead |
+| Charles Maduka | Frontend Dev. |
+| Adaeze Simon | Frontend Dev. |
+
+### Product Design
+| Name | Role |
+|------|------|
+| Ifechukwu Okoli | Product Designer and Lead |
+| Gerald Makuochukwu | Product Designer |
+| Anosike Sandra Eleganza | Product Designer |
+
+### Data Analysis
+| Name | Role |
+|------|------|
+| Ositadimma Nwaigwe | Data Analyst and Lead |
+| Ego Onwudiegwu | Data Analyst |
+| Christian Orji | Data Analyst |
+| Amarachi Jideofor | Data Analyst |
+
+### Digital Marketing
+| Name | Role |
+|------|------|
+| Obianuji Nnaji | Digital Marketing |
+
+### Cyber Security
+| Name | Role |
+|------|------|
+| Kelly Nwanji | Cyber Security |
+
+---
+
+## 📄 License
+© Learnable'26 Build SZN-Group 9 | Naija Kitchen Chaos. All rights reserved.
