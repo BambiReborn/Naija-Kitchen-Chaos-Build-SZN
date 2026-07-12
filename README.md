@@ -23,34 +23,34 @@ Naija Kitchen Chaos is a fast-paced multiplayer cooking game where players team 
 ---
 
 ## 📁 Project Structure
-src/
-├── pages/
-│   ├── Home.tsx
-│   ├── About.tsx
-│   ├── Leaderboard.tsx
-│   ├── Community.tsx
-│   └── Characters.tsx
-├── components/
-│   ├── Header.tsx
-│   └── Footer.tsx
-├── assets/
-│   ├── home/
-│   ├── about/
-│   ├── leaderboard/
-│   ├── community/
-│   ├── characters/
-│   └── shared/
-├── styles/
-│   ├── Home.css
-│   ├── About.css
-│   ├── Leaderboard.css
-│   ├── Community.css
-│   ├── Characters.css
-│   ├── Header.css
-│   └── Footer.css
-├── index.css
-├── App.tsx
-└── main.tsx
+src/  
+├── pages/  
+│   ├── Home.tsx  
+│   ├── About.tsx  
+│   ├── Leaderboard.tsx  
+│   ├── Community.tsx  
+│   └── Characters.tsx  
+├── components/  
+│   ├── Header.tsx  
+│   └── Footer.tsx  
+├── assets/  
+│   ├── home/  
+│   ├── about/  
+│   ├── leaderboard/  
+│   ├── community/  
+│   ├── characters/  
+│   └── shared/  
+├── styles/  
+│   ├── Home.css  
+│   ├── About.css  
+│   ├── Leaderboard.css  
+│   ├── Community.css  
+│   ├── Characters.css  
+│   ├── Header.css  
+│   └── Footer.css  
+├── index.css  
+├── App.tsx  
+└── main.tsx  
 
 ---
 
