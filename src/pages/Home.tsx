@@ -4,7 +4,41 @@ import CTAButton from '../components/CTAButton'
 import bubblyMan from '../assets/home/bubbly male chef.png'
 import bubblyLady from '../assets/home/bubbly female chef.png'
 
+// MEET THE CHEF CARDS //
+import ChefCards from '../components/ChefCards'
+import mamaNkechi from '../assets/home/mama-nkechi.png'
+import chinedu from '../assets/home/chinedu.png'
+import ngozi from '../assets/home/ngozi.png'
+import tunde from '../assets/home/tunde.png'
+import AIChef from '../assets/home/AI chef.png'
+
+const chefs = [
+    { image: mamaNkechi, name: 'MAMA NKECHI', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
+    { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feet. Always three steps ahead.' },
+    { image: ngozi, name: 'NGOZI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
+    { image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.' },
+    { image: AIChef, name: 'AI-SOUS CHEF', role: 'The Digital Assistant', description: 'Smart, helpful and doesn\'t complain.' },
+]
+
+// GAME FEATURES SECTION //
+import fireChef from '../assets/home/gameFTs image.png'
+import GameFTsCards from '../components/GameFTsCards'
+import increaseDifficulty from '../assets/home/game-bars.png'
+import multiPlayer from '../assets/home/game-controller.png'
+import timeChallenges from '../assets/home/game-stopwatch.png'
+
+
 function Home() {
+
+    {/* SCROLL CARD LOGIC */}
+    const scrollChefsLeft = () => {
+    document.getElementById('chefsWrapper')?.scrollBy({ left: -300, behavior: 'smooth' })
+    }
+
+    const scrollChefsRight = () => {
+    document.getElementById('chefsWrapper')?.scrollBy({ left: 300, behavior: 'smooth' })
+    }
+
   return (
     <main>
         {/* HERO SECTION */}
@@ -50,6 +84,74 @@ function Home() {
                 </div>
             </div>
         </section>
+
+        <section id='chefCards'>
+            <div className="line-head">
+                <h3>
+                    MEET THE CHEFS
+                </h3>
+            </div>
+
+            {/* MEET THE CHEFS CARD */}
+            <div className="scrollCards-div">
+                <button className="scroll-btn-left" onClick={scrollChefsLeft}>
+                    <i className="fa-solid fa-angle-left"></i>
+                </button>
+
+                <div className="cards-wrapper" id="chefsWrapper">
+                    {chefs.map((chef) => (
+                    <ChefCards
+                        key={chef.name}
+                        image={chef.image}
+                        name={chef.name}
+                        role={chef.role}
+                        description={chef.description}
+                    />
+                    ))}
+                </div>
+
+                <button className="scroll-btn-right" onClick={scrollChefsRight}>
+                    <i className="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+
+        </section>
+
+        <section id='gameFTsSection'>
+            <div className="line-head">
+                <h3>
+                    MEET THE CHEFS
+                </h3>
+            </div>
+
+            <img src={fireChef} alt="Fire Chef" />
+
+            <GameFTsCards 
+                image={increaseDifficulty}
+                title="INCREASINGLY DIFFICULT KITCHENS"
+                description="From small kitchen to bustling bukkas, chaos level goes higher"
+                className="topRight"
+            />
+
+            {/* CARD 2 */}
+            <GameFTsCards 
+                image={multiPlayer}
+                title="LOCAL MULTIPLAYER"
+                description="Team up with friends in local cook-up and dominate the ktichen"
+                className = "centerLeft"
+            />
+
+            {/* CARD 3 */}
+            <GameFTsCards 
+                image = {timeChallenges}
+                title = "TIME-BASED CHALLENGES"
+                description = "Race against the clock, manage multiple orders and keep your cool"
+                className = "bottomRight"
+            />
+        </section>
+
+        {/* GAMING TOURNAMENT SECTION */}
+        
     </main>
   )
 }
