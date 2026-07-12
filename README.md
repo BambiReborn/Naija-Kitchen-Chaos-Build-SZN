@@ -1,4 +1,4 @@
-# 🍳 Naija Kitchen Chaos
+# 🍲 Naija Kitchen Chaos
 
 A chaotic multiplayer Nigerian cooking game where you cook fast, serve authentic cuisines against all odds, before everything burns!
 
