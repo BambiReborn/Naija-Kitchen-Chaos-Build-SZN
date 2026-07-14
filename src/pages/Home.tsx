@@ -28,6 +28,17 @@ import multiPlayer from '../assets/home/game-controller.png'
 import timeChallenges from '../assets/home/game-stopwatch.png'
 
 
+// GAMING TOURNAMENT //
+import TournamentCard from '../components/TournamentCard'
+import playerIMG from '../assets/home/tournament player.png'
+
+// MEET OUR TOP PLAYERS SECTION //
+import Emeka12 from '../assets/home/Emeka12.png'
+import proCook from '../assets/home/Pro-cook.png'
+import iLuvsuya from '../assets/home/iLuvsuya.png'
+import chefChi from '../assets/home/Chefchi.png'
+
+
 function Home() {
 
     {/* SCROLL CARD LOGIC */}
@@ -55,7 +66,7 @@ function Home() {
                 </h2>
 
                 <nav>
-                    <CTAButton text="PLAY NOW" href="#" />
+                    <CTAButton text="PLAY NOW" href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" />
                     <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="#" />
                 </nav>
             </div>
@@ -78,7 +89,7 @@ function Home() {
                         complete chaos
                     </p>
 
-                    <CTAButton text="DOWNLOAD" href="#" className="downloadBTN" />
+                    <CTAButton text="DOWNLOAD" href="https://studioultra.itch.io/naija-kitchen-chaos" className="downloadBTN" />
 
                     <img src={bubblyLady} alt="Nigerian Lady" />
                 </div>
@@ -151,7 +162,84 @@ function Home() {
         </section>
 
         {/* GAMING TOURNAMENT SECTION */}
-        
+        <section id='tournament-section'>
+            <div id='tournament-heading'>
+                <h4>
+                Competitive Plays
+                </h4>
+                <h3>
+                    OUR GAMING TOURNAMENTS
+                </h3>
+            </div>
+
+            <div id='tournamentCard-wrapper'>
+                {/* CARD 1 */}
+                <TournamentCard 
+                    player1Image = {playerIMG}
+                    player2Image = {playerIMG}
+                    status = "UPCOMING"
+                    score = "0/0"
+                    matchTitle = "Emeka12 VS Chukwuka0"
+                    date = "23 August 2026 | 6:00pm "
+                    youtubeLink = "#"
+                    instagramLink = "#"
+                    className = "tournament-cards"
+                />
+
+                {/* CARD 2 */}
+                <TournamentCard 
+                    player1Image = {playerIMG}
+                    player2Image = {playerIMG}
+                    status = "FINISHED"
+                    score = "20/22"
+                    matchTitle = "Pro Cook VS King Chef"
+                    date = "02 July 2026 | 9:00pm "
+                    youtubeLink = "#"
+                    instagramLink = "#"
+                    className = "tournament-cards"
+                />
+
+                {/* CARD 3 */}
+                <TournamentCard 
+                    player1Image = {playerIMG}
+                    player2Image = {playerIMG}
+                    status = "UPCOMING"
+                    score = "0/0"
+                    matchTitle = "iLuvsuya VS Chefchi"
+                    date = "2 August 2026 | 6:00pm "
+                    youtubeLink = "#"
+                    instagramLink = "#"
+                    className = "tournament-cards"
+                />
+            </div>
+
+        </section>
+
+        {/* MEET OUR TOP PLAYERS SECTION */}
+        <section id='topPlayers-section'>
+            <div id='topPlayers-texts'>
+                <h4>Our Top Players</h4>
+                <h3>LET'S MEET OUR TOP <br /> PLAYERS</h3>
+            </div>
+
+            <div id='topPlayers-images'>
+                <div id='img1-div'>
+                    <img src={Emeka12} id='p1' className="topPlayers-img" alt="Emeka12 - P1" />
+                </div>
+
+                <div id='img2-div'>
+                    <img src={proCook} id='p2' className="topPlayers-img" alt="Pro Cook - P2" />
+                </div>
+
+                <div id='img3-div'>
+                    <img src={iLuvsuya} id='p3' className="topPlayers-img" alt="iLuvsuya - P3" />
+                </div>
+
+                <div id='img4-div'>
+                    <img src={chefChi} id='p4' className="topPlayers-img" alt="Chefchi - P4" />
+                </div>
+            </div>
+        </section>
     </main>
   )
 }

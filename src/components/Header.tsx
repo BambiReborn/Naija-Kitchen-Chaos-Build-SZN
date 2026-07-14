@@ -16,7 +16,7 @@ function Header() {
             <Link to ="/characters">CHARACTERS</Link>
         </nav>
 
-        <a href="#" target="_blank">PLAY NOW</a>
+        <a href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" target="_blank">PLAY NOW</a>
     </header>
   )
 }
