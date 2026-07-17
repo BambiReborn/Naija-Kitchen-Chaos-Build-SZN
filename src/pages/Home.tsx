@@ -6,14 +6,14 @@ import bubblyLady from '../assets/home/bubbly female chef.png'
 
 // MEET THE CHEF CARDS //
 import ChefCards from '../components/ChefCards'
-import mamaNkechi from '../assets/home/mama-nkechi.png'
-import chinedu from '../assets/home/chinedu.png'
-import ngozi from '../assets/home/ngozi.png'
-import tunde from '../assets/home/tunde.png'
+import emeka from '../assets/home/chef-emeka.png'
+import chinedu from '../assets/home/chef-chinedu.png'
+import ngozi from '../assets/home/Ngozi.png'
+import tunde from '../assets/home/chef-tunde.png'
 import AIChef from '../assets/home/AI chef.png'
 
 const chefs = [
-    { image: mamaNkechi, name: 'MAMA NKECHI', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
+    { image: emeka, name: 'EMEKA', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
     { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feet. Always three steps ahead.' },
     { image: ngozi, name: 'NGOZI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
     { image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.' },
@@ -78,13 +78,47 @@ function Home() {
                 </h2>
 
                 <nav>
-                    <CTAButton text="PLAY NOW" href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" />
-                    <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="#" />
+                    <CTAButton text="PLAY NOW" href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" className="textSide-playNow"/>
+                    <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="#" className="textSide-watchTrailer" />
                 </nav>
             </div>
 
             <div id='imageSide'>
-                <img src={bubblyMan} alt="Nigerian Chef" />
+               
+                <svg
+                    className="aboutBorder"
+                    viewBox="0 0 1200 420"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="
+                        M30 20
+                        H410
+                        L455 55
+                        H745
+                        L790 20
+                        H1170
+                        L1195 45
+
+                        V375
+
+                        L1170 400
+
+                        H790
+                        L745 365
+                        H455
+                        L410 400
+                        H30
+
+                        L5 375
+
+                        V45
+
+                        Z"
+                    />
+                </svg>
+                <img src={bubblyMan} id='bubblyMan' alt="Nigerian Chef" />
 
                 <div id='aboutGame-text'>
                     <h4>
@@ -102,9 +136,9 @@ function Home() {
                     </p>
 
                     <CTAButton text="DOWNLOAD" href="https://studioultra.itch.io/naija-kitchen-chaos" className="downloadBTN" />
-
-                    <img src={bubblyLady} alt="Nigerian Lady" />
                 </div>
+
+                <img src={bubblyLady} id='bubblyLady' alt="Nigerian Lady" />
             </div>
         </section>
 
@@ -139,38 +173,46 @@ function Home() {
             </div>
 
         </section>
-
+        
+        {/* GAME FEATURES SECTION */}
         <section id='gameFTsSection'>
             <div className="line-head">
                 <h3>
-                    MEET THE CHEFS
+                    GAME FEATURES
                 </h3>
             </div>
+            
+            <div id='fire-cheff-wrapper'>
+                <img src={fireChef} id='fire-chef' alt="Fire Chef" />
+            </div>
 
-            <img src={fireChef} alt="Fire Chef" />
+            {/* CARDS */}
+            
+                <GameFTsCards 
+                    image={increaseDifficulty}
+                    title={<>INCREASINGLY <br />
+                        DIFFICULT KITCHENS</>}
+                    description={<>From small kitchen to    bustling <br />
+                        bukkas, chaos level goes higher</>}
+                    className="topRight"
+                />
 
-            <GameFTsCards 
-                image={increaseDifficulty}
-                title="INCREASINGLY DIFFICULT KITCHENS"
-                description="From small kitchen to bustling bukkas, chaos level goes higher"
-                className="topRight"
-            />
+                {/* CARD 2 */}
+                <GameFTsCards 
+                    image={multiPlayer}
+                    title={<>LOCAL <br /> MULTIPLAYER</>}
+                    description={<>Team up with friends in <br /> local cook-up and <br /> dominate the ktichen</>}
+                    className = "centerLeft"
+                />
 
-            {/* CARD 2 */}
-            <GameFTsCards 
-                image={multiPlayer}
-                title="LOCAL MULTIPLAYER"
-                description="Team up with friends in local cook-up and dominate the ktichen"
-                className = "centerLeft"
-            />
-
-            {/* CARD 3 */}
-            <GameFTsCards 
-                image = {timeChallenges}
-                title = "TIME-BASED CHALLENGES"
-                description = "Race against the clock, manage multiple orders and keep your cool"
-                className = "bottomRight"
-            />
+                {/* CARD 3 */}
+                <GameFTsCards 
+                    image = {timeChallenges}
+                    title = {<>TIME-BASED <br /> CHALLENGES</>}
+                    description = {<>Race against the clock, <br /> manage multiple orders <br /> and keep your cool</>}
+                    className = "bottomRight"
+                />
+            
         </section>
 
         {/* GAMING TOURNAMENT SECTION */}
@@ -329,7 +371,7 @@ function Home() {
         />
 
         {/* FOOTER */}
-        
+
     </main>
   )
 }

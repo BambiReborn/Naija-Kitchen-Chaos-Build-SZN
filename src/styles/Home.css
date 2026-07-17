@@ -3,3 +3,429 @@ body {
 }
 
 /* HEADER ALREADY STYLED IN HEADER.CSS */
+
+#heroSection {
+    margin-top: 20px;
+    height: 100vh;
+}
+
+#textSide h1 {
+    text-align: center;
+    color: var(--heading-fonts-color);
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0%;
+    line-height: 100%;
+}
+
+#textSide h2 {
+    text-align: center;
+    color: var(--heading-fonts-color);
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 0%;
+    line-height: 100%;
+}
+
+#textSide nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.textSide-playNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 7rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.textSide-playNow:hover {
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
+/* WATCH TRAILER BTN */
+.textSide-watchTrailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-color2);
+    width: 12rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid var(--BTNs-bg-and-borders-orange);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.textSide-watchTrailer:hover {
+    /* background-color: #ffb54d9d; */
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FFB54D;
+}
+
+/* HERO IMAGE SIDE */
+#imageSide{
+    position:relative;
+    width:100%;
+    max-width:1400px;
+    height:420px;
+    margin:70px auto 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.aboutBorder{
+    position:absolute;
+    left:5%;
+    right:5%;
+    top:15px;
+    bottom:15px;
+    width:90%;
+    height:calc(100% - 10px);
+    overflow:visible;
+    pointer-events:none;
+    z-index:0;
+}
+
+.aboutBorder path{
+    fill:none;
+    stroke:#FFB54D;
+    stroke-width:2.3;
+    vector-effect:non-scaling-stroke;
+}
+
+#imageSide > *:not(.aboutBorder){
+    position:relative;
+    z-index:1;
+}
+
+#aboutGame-text{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:3;
+}
+
+#aboutGame-text h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--pTags-font-color);
+}
+
+#aboutGame-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top: 10px;
+    color: var(--heading-fonts-color);
+}
+
+#aboutGame-text p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0%;
+    color: var(--pTags-font-color);
+}
+
+#aboutGame-text .downloadBTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 7rem;
+    padding: 0.8em;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+#aboutGame-text .downloadBTN:hover {
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
+#imageSide img{
+    position:absolute;
+    z-index:2;
+}
+
+#bubblyMan{
+    width:28%;
+    left:1%;
+    bottom:-5px;
+}
+
+#bubblyLady{
+    width:29%;
+    right:-1%;
+    bottom:25px;
+}
+
+
+/* MEET THE CHEFS SECTION */
+
+#chefCards{
+    margin-top: 80px;
+    width:100%;
+    /* padding:4rem 5%; */
+    box-sizing:border-box;
+}
+
+/* HEADING */
+
+.line-head{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-bottom:3rem;
+}
+
+.line-head::before,
+.line-head::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#FFB54D;
+}
+
+.line-head h3{
+    font-family:var(--fontHead);
+    font-size:1.3em;
+    font-weight:600;
+    color:#FFF;
+    letter-spacing:.12em;
+    white-space:nowrap;
+}
+
+/* SLIDE */
+
+.scrollCards-div{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* SCROLL BTNS */
+
+.scroll-btn-left,
+.scroll-btn-right{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    border:1px solid #FFB54D;
+    background:#3A302D;
+    color:#FFB54D;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    z-index:10;
+    transition:.25s;
+}
+
+.scroll-btn-left{
+    left:-30px;
+}
+
+.scroll-btn-right{
+    right:-30px;
+}
+
+.scroll-btn-left:hover,
+.scroll-btn-right:hover{
+    background:#FFB54D;
+    color:#241816;
+}
+
+/* CARDS WRAPPER */
+
+.cards-wrapper{
+    width:100%;
+    display:flex;
+    gap:2rem;
+    overflow:hidden;
+    scroll-behavior:smooth;
+    scrollbar-width: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARDS */
+
+.cards{
+    min-width: 23.2%;
+    min-height: 50%;
+    border:1px solid #FFB54D;
+    border-radius:20px;
+    background:transparent;
+    padding:2em 1.1em;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* CARDS IMGS */
+
+.cards img{
+    width:72%;
+    object-fit:contain;
+    margin-bottom:1.3rem;
+}
+
+/* WRITE-UP */
+
+.writeUp-wrapper{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.writeUp-wrapper h3{
+    font-family:var(--fontHead);
+    font-size:1.5rem;
+    font-weight:700;
+    color:#FFB54D;
+    margin:0;
+}
+
+.writeUp-wrapper h4{
+    font-family:var(--fontBody);
+    font-size:1.2rem;
+    font-weight:500;
+    color:#D8D8D8;
+    margin:.7rem 0 0;
+}
+
+.writeUp-wrapper p{
+    text-align: start;
+    width:90%;
+    margin:1.2rem auto 0;
+    color:#BFBFBF;
+    line-height:1.5;
+    font-size:1.1rem;
+}
+
+
+/* GAME FEATURES */
+#gameFTsSection {
+    position: relative;
+    margin-top: 80px;
+    width:100%;
+    /* padding:4rem 5%; */
+    box-sizing:border-box;
+}
+
+
+#fire-cheff-wrapper {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    /* align-items: center; */
+    /* align-self: center; */
+    max-width: 50%;
+    margin-top: 80px;
+    /* border: 1px solid #FFF; */
+}
+
+#fire-chef {
+    width: 100%;
+}
+
+/* CARDS */
+.gameFTCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 12rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border: 1px solid var(--BTNs-bg-and-borders-orange);
+    border-radius: 25px;
+}
+
+.topRight {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.centerLeft {
+    position: absolute;
+    left: 24.5%;
+    top: 43.8%;
+}
+
+.bottomRight {
+    position: absolute;
+    left: 50.5%;
+    top: 77%;
+}
+
+.gameFTCards img {
+    width: 20%;
+}
+
+.gameFTCards h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 15px;
+    color: var(--heading-fonts-color);
+}
+
+.gameFTCards p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    color: var(--pTags-font-color);
+}
+
+
+/* GAMING TOURNAMENT SECTION */
