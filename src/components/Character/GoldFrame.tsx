@@ -10,9 +10,9 @@ export default function GoldFrame() {
       <path
         d="
           M1227 0.5
-          H590
+          H570
           V225.5
-          H424
+          H460
           V155
           H0
         "
@@ -24,6 +24,3 @@ export default function GoldFrame() {
   );
 }
 
-<svg width="1227" height="226" viewBox="0 0 1227 226" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1227 0.5H623V225.5H424V155H0" stroke="#FFB54D"/>
-</svg>

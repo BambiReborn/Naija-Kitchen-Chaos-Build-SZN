@@ -9,7 +9,7 @@
 /* Individual pill container */
 .currency-box {
   width: 135px;
-  height: 44px;
+  height: 40px;
   background: #3A2F2C; /* Dark brown background from screenshot */
   border-radius: 10px;
   display: flex;
@@ -26,12 +26,12 @@
 
 /* The absolute icon that overflows the container */
 .currency-icon {
-  width: 53px;
-  height: 53px;
+  width: 56px;
+  height: 56px;
   position: absolute;
   
   /* Positions the icon overlapping on the far left edge */
-  left: -8px; 
+  left: -18px; 
   
   /* Centers the 53px icon vertically against the 44px box parent */
   top: 50%;

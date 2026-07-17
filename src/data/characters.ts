@@ -104,7 +104,7 @@ export const characters: Character[] = [
     image:MamaNkechi,
 
     level:"LEVEL 1 CHEF",
-    description:"With over 30 years of experience in Nigerian cuisine, Mama Nkechi has perfected re",
+    description:"With over 30 years of experience in Nigerian cuisine, Mama Nkechi has perfected recipes passed down.",
 
     stats: {
       speed: 20,
