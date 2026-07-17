@@ -11,7 +11,7 @@ import CommunityKitchen from '../components/Community/CommunityKitchen'
 
 function Community() {
   return (
-    <div>
+    <div className="communityPage">
       <CommunityHero />
       <CommunityJoin />
       <CommunityStat />

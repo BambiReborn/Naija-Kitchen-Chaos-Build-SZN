@@ -4,7 +4,7 @@ A chaotic multiplayer Nigerian cooking game where you cook fast, serve authentic
 
 ## 🔗 Live Demo
 Click below to access the live site:  
-[Naija Kitchen Chaos](https://naija-kitchen-chaos.vercel.app/)
+[Naija Kitchen Chaos | NKC](https://naija-kitchen-chaos.vercel.app/)
 
 ---
 

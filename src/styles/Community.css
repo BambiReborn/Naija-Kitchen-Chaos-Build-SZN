@@ -1,0 +1,121 @@
+/* Hero section */
+.communityHero {
+    background-color: #201616;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.communityHeroHeading {
+    font-weight: 700;
+    font-size: 64px;
+    max-width: 70%;
+    color: white;
+}
+
+span {
+    color: #FFB54D;
+}
+
+.communityButtonCont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.primaryButton {
+    background-color: #FFB54D;
+    padding: 12px 28px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.primaryButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.secondaryButton {
+    padding: 12px 24px;
+    background-color:#201616;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #FFC16B;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #F9F9F9;
+}
+
+.secondaryButton img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Join Today */
+.joinToday {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 393px;
+    background-image: url('../assets/community/banner-border.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 80px 0 0 65px;
+}
+
+.joinTodayLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.joinTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.joinHeadingCont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.joinHeadingText {
+    color: #ADACAC;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.joinHeading {
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.joinText {
+    color: #ADACAC;
+    font-weight: 400;
+    font-style: 18px;
+}
+
+.joinTodayImage img {
+    max-width: 501px;
+    max-height: 328px;
+}
+

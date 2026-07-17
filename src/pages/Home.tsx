@@ -38,6 +38,18 @@ import proCook from '../assets/home/Pro-cook.png'
 import iLuvsuya from '../assets/home/iLuvsuya.png'
 import chefChi from '../assets/home/Chefchi.png'
 
+// JOIN COMMUNITY SECTION //
+import communityIMG from '../assets/home/community.png'
+
+// LATEST NEWS SECTION //
+import newsLady from '../assets/home/latest-news lady.png'
+import newsMan from '../assets/home/latest-news man.png'
+import LatestNewsCard from '../components/LatestNewsCard'
+
+// SURVIVE KITCHEN SECTION //
+import SurviveKitchen from '../components/SurviveKitchen'
+import boilingPot from '../assets/home/boiling-pot.png'
+
 
 function Home() {
 
@@ -240,6 +252,84 @@ function Home() {
                 </div>
             </div>
         </section>
+
+        {/* JOIN COMMUNITY SECTION */}
+        <section id='joinCommunity-section'>
+            <div id='content-wrapper'>
+                <div id='communityText'>
+                    <h4>COOK TOGETHER, WIN TOGETHER.</h4>
+                    <h3>
+                        Join Naija's Top Cooking Game <br /> <span style={{color: '#FFB54D'}}>Community Today</span>
+                    </h3>
+
+                    <p>
+                        Naija Kitchen chaos is a one of Nigeria’s top cooking game where you can connect <br/>
+                        with fellow chefs, food enthusiats, share recipes, join events, and complete cooking <br/>
+                        challenges. <br/>
+                        From Jollof battles to Suya showdowns - Naija Kitchen chaos community is always lit.
+                    </p>
+
+                    <CTAButton 
+                        text = "JOIN COMMUNITY"
+                        href="/community"
+                        internal
+                        className = "joinCommunity-BTN"
+                    />
+                </div>
+
+                <div id='communityImg'>
+                    <img src={communityIMG} alt="Community Awareness" />
+                </div>
+            </div>
+        </section>
+
+        {/* #LATEST NEWS SECTION */}
+        <section id='latestNews-section'>
+            <div id='latestNews-heading'>
+                <h4>#Latest News</h4>
+                <h3>Stay Updated With Our Blog <span style = {{color: '#FFB54D'}}>!</span></h3>
+            </div>
+
+            {/* CARDS */}
+            <div id='newsCards-wrapper'>
+                <LatestNewsCard 
+                    image = {newsLady}
+                    author= "By Eleganza"
+                    date = "21st July, 2026"
+                    description = "Breaking Barriers and Shaping the Future"
+                    readMoreLink= "#"
+                    className = "newsCard"
+                />
+
+                {/* CARD 2 */}
+                <LatestNewsCard 
+                    image = {newsMan}
+                    author= "By Gerald"
+                    date = "30th July, 2026"
+                    description = "Strategies for Dominating your Favorite Game"
+                    readMoreLink= "#"
+                    className = "newsCard"
+                />
+
+                {/* CARD 3 */}
+                <LatestNewsCard 
+                    image = {newsLady}
+                    author= "By Ifechukwu"
+                    date = "16th July, 2026"
+                    description = "Taking Cooking to the Next Level"
+                    readMoreLink= "#"
+                    className = "newsCard"
+                />
+            </div>
+        </section>
+
+        {/* SURVIVE KITCHEN SECTION */}
+        <SurviveKitchen 
+            image = {boilingPot}
+        />
+
+        {/* FOOTER */}
+        
     </main>
   )
 }

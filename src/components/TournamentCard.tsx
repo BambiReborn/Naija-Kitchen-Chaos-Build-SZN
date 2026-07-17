@@ -1,4 +1,5 @@
 
+
 type TournamentCardProps = {
     player1Image: string
     player2Image: string
