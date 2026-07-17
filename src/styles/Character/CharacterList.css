@@ -1,0 +1,10 @@
+/* ==========================================
+   CHARACTER LIST
+========================================== */
+
+.character-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 340px;
+}

@@ -1,0 +1,23 @@
+.gold-frame{
+    position:absolute;
+    top: 120px;
+    left:0;
+
+    width:1227;
+    height:210px;
+
+    pointer-events:none;
+}
+
+.gold-frame path{
+
+    fill:none;
+
+    stroke:#B87A23;
+
+    stroke-width:2.5;
+
+    stroke-linejoin:round;
+
+    stroke-linecap:round;
+}

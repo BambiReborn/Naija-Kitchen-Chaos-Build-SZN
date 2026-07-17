@@ -1,0 +1,37 @@
+/* ==========================================
+   CHARACTER INFO
+========================================== */
+
+.character-info-panel {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 35px;
+}
+
+.level-card {
+  width: 380px;
+  height: 64px;
+  background: #3f8300;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #f8b34d;
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-bottom: 22px;
+}
+
+.character-description {
+  width: 420px;
+
+  color: #d7d7d7;
+  font-size: 20px;
+  line-height: 1.5;
+
+  font-weight: 400;
+}

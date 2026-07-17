@@ -1,0 +1,68 @@
+/* ==========================================
+   CHARACTER STATS
+========================================== */
+
+.stats-panel {
+  width: 560px;
+  position: relative;
+  padding-top: 24px;
+}
+
+.stats-panel h1 {
+  color: #f8b24c;
+  font-family: Typography/Font name/Heading text;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  margin-bottom: 28px;
+}
+
+.upgrade-row{
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:12px;
+
+    padding-left:170px;   
+}
+.upgrade-btn{
+
+    width:180px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    background:#F6B24C;
+
+    color:#231815;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    transition:.2s ease;
+    
+}
+
+.upgrade-btn:hover{
+
+    background:#ffbe5d;
+
+    transform:translateY(-2px);
+}
+
+.upgrade-btn:active{
+
+    transform:translateY(0);
+}
