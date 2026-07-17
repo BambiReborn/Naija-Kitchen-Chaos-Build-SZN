@@ -119,3 +119,60 @@ span {
     max-height: 328px;
 }
 
+
+/* Stat */
+.communityStat {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.topLayerCont,
+.bottomLayerCont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.statCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px;
+    padding: 16px 24px;
+    border: 1px solid #FFB54D;
+    gap: 12px;
+}
+
+.statCard img {
+    max-width: 89px;
+    max-height: 109px;
+}
+
+.statCardTextCont {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.statCardHeading {
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+
+.statCardText {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ADACAC;
+}
+
+.bottomImage img {
+    max-width: 154px;
+    max-height: 135px;
+}

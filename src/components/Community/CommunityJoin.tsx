@@ -8,7 +8,7 @@ function CommunityJoin () {
                 <div className="joinTextContainer">
                     <div className="joinHeadingCont">
                         <p className="joinHeadingText">COOK TOGETHER, WIN TOGETHER</p>
-                        <h3 className="joinHeading">Join Naija's Top Cooking Game <span>Community Today</span><br /></h3>
+                        <h3 className="joinHeading">Join Naija's Top Cooking Game <br /><span>Community Today</span></h3>
                     </div>
 
                     <p className="joinText">Naija Kitchen chaos is a one of Nigeria’s top cooking game where you can connect with fellow chefs, food enthusiats, share recipes, join events, and complete cooking challenges. From Jollof battles to Suya showdowns - Naija Kitchen chaos community is always lit.</p>
