@@ -10,7 +10,7 @@ export default function GoldFrame() {
       <path
         d="
           M1227 0.5
-          H570
+          H590
           V225.5
           H460
           V155
