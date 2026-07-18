@@ -24,7 +24,7 @@ Naija Kitchen Chaos is a fast-paced multiplayer cooking game where players team 
 
 ## 📁 Project Structure
 src/
-├── pages/
+├── pages/  
 │   ├── About.tsx  
 │   ├── Characters.tsx  
 │   ├── Community.tsx  
