@@ -8,7 +8,7 @@ import bubblyLady from '../assets/home/bubbly female chef.png'
 import ChefCards from '../components/ChefCards'
 import emeka from '../assets/home/chef-emeka.png'
 import chinedu from '../assets/home/chef-chinedu.png'
-import ngozi from '../assets/home/Ngozi.png'
+import ngozi from '../assets/home/ngozi.png'
 import tunde from '../assets/home/chef-tunde.png'
 import AIChef from '../assets/home/AI chef.png'
 
