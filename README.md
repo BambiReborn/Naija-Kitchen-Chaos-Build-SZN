@@ -25,40 +25,40 @@ Naija Kitchen Chaos is a fast-paced multiplayer cooking game where players team 
 ## 📁 Project Structure
 src/
 ├── pages/
-│   ├── About.tsx
-│   ├── Characters.tsx
-│   ├── Community.tsx
-│   ├── Home.tsx
-│   └── Leaderboard.tsx
-├── components/
-│   ├── ChefCards.tsx
-│   ├── CTAButton.tsx
-│   ├── Footer.tsx
-│   ├── GameFTsCards.tsx
-│   ├── Header.tsx
-│   ├── LatestNewsCard.tsx
-│   ├── SurviveKitchen.tsx
-│   └── TournamentCard.tsx
-├── assets/
-│   ├── about/
-│   ├── characters/
-│   ├── community/
-│   ├── home/
-│   ├── leaderboard/
-│   ├── react.svg
-│   ├── shared/
-│   └── vite.svg
-├── styles/
-│   ├── About.css
-│   ├── Characters.css
-│   ├── Community.css
-│   ├── Footer.css
-│   ├── Header.css
-│   ├── Home.css
-│   └── Leaderboard.css
-├── App.tsx
-├── index.css
-└── main.tsx
+│   ├── About.tsx  
+│   ├── Characters.tsx  
+│   ├── Community.tsx  
+│   ├── Home.tsx  
+│   └── Leaderboard.tsx  
+├── components/  
+│   ├── ChefCards.tsx  
+│   ├── CTAButton.tsx  
+│   ├── Footer.tsx  
+│   ├── GameFTsCards.tsx  
+│   ├── Header.tsx  
+│   ├── LatestNewsCard.tsx  
+│   ├── SurviveKitchen.tsx  
+│   └── TournamentCard.tsx  
+├── assets/  
+│   ├── about/  
+│   ├── characters/  
+│   ├── community/  
+│   ├── home/  
+│   ├── leaderboard/  
+│   ├── react.svg  
+│   ├── shared/  
+│   └── vite.svg  
+├── styles/  
+│   ├── About.css  
+│   ├── Characters.css  
+│   ├── Community.css  
+│   ├── Footer.css  
+│   ├── Header.css  
+│   ├── Home.css  
+│   └── Leaderboard.css  
+├── App.tsx  
+├── index.css  
+└── main.tsx  
 
 ---
 
