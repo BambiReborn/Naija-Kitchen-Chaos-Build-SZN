@@ -1,9 +1,8 @@
-
 type LatestNewsCardProps = {
     image: string
     author: string
     date: string
-    description: string
+    description: React.ReactNode
     readMoreLink: string
     className: string
 }
@@ -16,7 +15,7 @@ function LatestNewsCard ({ image, author, date, description, readMoreLink, class
             <div className="cardInfo">
                 <h4><i className="fa-regular fa-user"></i> {author}</h4>
                 <div className="cardInfo-divider"></div>
-                <h4><i className="fa-regular fa-calendar"></i> {date}</h4>
+                <h4><i className="fa-regular fa-calendar-days"></i> {date}</h4>
             </div>
 
             <p>{description}</p>

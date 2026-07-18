@@ -429,3 +429,501 @@ body {
 
 
 /* GAMING TOURNAMENT SECTION */
+#tournament-section {
+    margin-top: 100px;
+}
+
+#tournament-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#tournament-heading h4 {
+    color: var(--green-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#tournament-heading h3 {
+    color: var(--heading-fonts-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#tournamentCard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tournamentCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 20px;
+    border: 1px solid var(--green-color);
+    border-radius: 25px;
+    width: 70%;
+    height: 30vh;
+
+
+}
+
+.players-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.players-side img {
+    width: 25%;
+}
+
+.players-side .vs-text {
+    color: var(--heading-fonts-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.players-side .vs-slash {
+    color: var(--BTNs-bg-and-borders-orange);
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1;
+    transform: scaleY(5) skewX(-60deg);
+    letter-spacing: 0;
+    margin-right: 0.5rem; 
+}
+
+.card-divider {
+    border: 1px solid var(--green-color);
+    transform: scaleY(100);
+}
+
+/* RIGHT SIDE */
+.tournament-info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 0.5rem;
+}
+.tournament-badges {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.status-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 5rem;
+    padding: 0.8em;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.score-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--background-color);
+    width: 5rem;
+    padding: 0.8em;
+    border-radius: 10px;
+    border: 1px solid var(--BTNs-bg-and-borders-orange);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+.tournament-info h3 {
+    color: var(--heading-fonts-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.tournament-info p {
+    color: var(--pTags-font-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tournament-socials {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+#youtube-link, #instagram-link {
+    text-decoration: none;
+    color: var(--pTags-font-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#youtube-link i {
+    color: var(--red-color);
+    font-size: 1.3rem;
+
+}
+
+#instagram-link i {
+    color: var(--social-color);
+    font-size: 1.3rem;
+}
+
+
+/* MEET OUT TOP PLAYERS SECTION */
+#topPlayers-section {
+    margin-top: 80px;
+}
+
+#topPlayers-texts h4 {
+    text-align: center;
+    color: var(--green-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#topPlayers-texts h3 {
+    text-align: center;
+    color: var(--heading-fonts-color);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 10px;
+}
+
+/* IMAGES */
+
+#topPlayers-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -50px;
+
+}
+
+.topPlayers-img-div {
+    /* position: absolute; */
+
+    width: 16%;
+}
+
+.topPlayers-img {
+    width: 100%;
+}
+
+#img2-div, #img4-div {
+    margin-top: 190px;
+}
+
+
+/* JOIN COMMUNITY SECTION */
+#joinCommunity-section {
+    margin-top: 80px;
+}
+
+#joinCommunity-section #content-wrapper{
+    position:relative;
+    width:100%;
+    max-width:1400px;
+    height:420px;
+    margin:70px auto 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.aboutBorder{
+    position:absolute;
+    left:5%;
+    right:5%;
+    top:15px;
+    bottom:15px;
+    width:90%;
+    height:calc(100% - 10px);
+    overflow:visible;
+    pointer-events:none;
+    z-index:0;
+}
+
+.aboutBorder path{
+    fill:none;
+    stroke:#FFB54D;
+    stroke-width:2.3;
+    vector-effect:non-scaling-stroke;
+}
+
+#content-wrapper > *:not(.aboutBorder){
+    position:relative;
+    z-index:1;
+}
+
+#communityText {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: start;
+    gap: 0.8rem;
+}
+
+#communityText h4 {
+    color: var(--pTags-font-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#communityText h3 {
+    color: var(--heading-fonts-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+#communityText p {
+    color: var(--pTags-font-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.joinCommunity-BTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 10rem;
+    padding: 0.8em;
+    margin-top: 13px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.joinCommunity-BTN:hover {
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
+/* COMMUNITY IMAGE */
+#communityImg {
+    width: 23%;
+    margin-top: 50px;
+}
+
+#communityImg img {
+    width: 100%;
+}
+
+/* LATEST NEWS SECTION */
+#latestNews-section {
+    margin-top: 80px;
+}
+
+#latestNews-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#latestNews-heading h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--BTNs-bg-and-borders-orange);
+}
+
+#latestNews-heading h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--heading-fonts-color);
+}
+
+/* CARDS */
+#newsCards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 50px;
+}
+
+.newsCard {
+    width: 20rem;
+
+}
+
+.newsCard img {
+    width: 100%;
+}
+
+.newsCard .cardInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cardInfo h4 {
+    color: var(--heading-fonts-color);
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.cardInfo h4 i {
+    color: var(--BTNs-bg-and-borders-orange);
+    font-size: 1.1rem;
+}
+
+.newsCard p {
+    color: var(--heading-fonts-color);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.newsCard a {
+    color: var(--BTNs-bg-and-borders-orange);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+
+/* SURVIVE KITCHEN */
+#surviveKitchen-section{
+    width:100%;
+    min-height:24vw;
+    padding:0 7%;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+#text-side{
+    width:32%;
+    z-index:2;
+}
+
+#text-side h3{
+    margin:0;
+    font-size:clamp(1.5rem,2.2vw,2.5rem);
+    line-height:1.05;
+    font-weight:700;
+    color:#FFF;
+}
+
+#text-side p{
+    width:85%;
+    margin:1vw 0 0;
+    font-size:clamp(.75rem,1vw,1.1rem);
+    line-height:1.1;
+    font-weight:600;
+    color:var(--pTags-font-color);
+}
+
+#btn-side{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    margin-left:3vw;
+    z-index:2;
+}
+
+#btn-side .playNow-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:var(--BTN-writeUp);
+    background-color:var(--BTNs-bg-and-borders-orange);
+    width:7rem;
+    padding:.8em;
+    border-radius:5px;
+    border:1px solid transparent;
+    font-size:1rem;
+    font-weight:600;
+    transition:all .3s ease-in;
+    cursor:pointer;
+}
+
+#btn-side .playNow-btn:hover{
+    background-color:#ffb54d9d;
+    border-bottom:1px solid #FFB54D;
+}
+
+#btn-side .downloadDemo-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:.8rem;
+    text-decoration:none;
+    color:var(--BTN-writeUp);
+    background-color:var(--BTNs-bg-color2);
+    width:12rem;
+    padding:.8em;
+    border-radius:5px;
+    border:1px solid var(--BTNs-bg-and-borders-orange);
+    font-size:1rem;
+    font-weight:600;
+    transition:all .3s ease-in;
+    cursor:pointer;
+}
+
+#btn-side .downloadDemo-btn:hover{
+    border:1px solid transparent;
+    border-bottom:1px solid #FFB54D;
+}
+
+#image-side{
+    position:absolute;
+    right:7%;
+    bottom:4vw;
+    width:25vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#image-side img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+

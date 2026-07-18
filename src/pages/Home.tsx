@@ -277,19 +277,19 @@ function Home() {
             </div>
 
             <div id='topPlayers-images'>
-                <div id='img1-div'>
+                <div id='img1-div' className="topPlayers-img-div">
                     <img src={Emeka12} id='p1' className="topPlayers-img" alt="Emeka12 - P1" />
                 </div>
 
-                <div id='img2-div'>
+                <div id='img2-div' className="topPlayers-img-div">
                     <img src={proCook} id='p2' className="topPlayers-img" alt="Pro Cook - P2" />
                 </div>
 
-                <div id='img3-div'>
+                <div id='img3-div' className="topPlayers-img-div">
                     <img src={iLuvsuya} id='p3' className="topPlayers-img" alt="iLuvsuya - P3" />
                 </div>
 
-                <div id='img4-div'>
+                <div id='img4-div' className="topPlayers-img-div">
                     <img src={chefChi} id='p4' className="topPlayers-img" alt="Chefchi - P4" />
                 </div>
             </div>
@@ -297,7 +297,42 @@ function Home() {
 
         {/* JOIN COMMUNITY SECTION */}
         <section id='joinCommunity-section'>
+            
             <div id='content-wrapper'>
+                <svg
+                className="aboutBorder"
+                viewBox="0 0 1200 420"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+                >
+                    <path
+                        d="
+                        M30 20
+                        H410
+                        L455 55
+                        H745
+                        L790 20
+                        H1170
+                        L1195 45
+
+                        V375
+
+                        L1170 400
+
+                        H790
+                        L745 365
+                        H455
+                        L410 400
+                        H30
+
+                        L5 375
+
+                        V45
+
+                        Z"
+                    />
+                </svg>
+
                 <div id='communityText'>
                     <h4>COOK TOGETHER, WIN TOGETHER.</h4>
                     <h3>
@@ -338,7 +373,7 @@ function Home() {
                     image = {newsLady}
                     author= "By Eleganza"
                     date = "21st July, 2026"
-                    description = "Breaking Barriers and Shaping the Future"
+                    description = {<>Breaking Barriers and Shaping the <br />Future</>}
                     readMoreLink= "#"
                     className = "newsCard"
                 />
@@ -348,7 +383,7 @@ function Home() {
                     image = {newsMan}
                     author= "By Gerald"
                     date = "30th July, 2026"
-                    description = "Strategies for Dominating your Favorite Game"
+                    description = {<>Strategies for Dominating your <br />Favorite Game</>}
                     readMoreLink= "#"
                     className = "newsCard"
                 />
@@ -358,7 +393,7 @@ function Home() {
                     image = {newsLady}
                     author= "By Ifechukwu"
                     date = "16th July, 2026"
-                    description = "Taking Cooking to the Next Level"
+                    description = {<>Taking Cooking to the Next Level</>}
                     readMoreLink= "#"
                     className = "newsCard"
                 />
