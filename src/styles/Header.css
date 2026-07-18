@@ -1,0 +1,51 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#navLink {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+#navLink a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--pTags-font-color);
+    cursor: pointer;
+}
+
+#navLink a:hover {
+    color: #FFB54D;
+}
+
+#playNow-BTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 7rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+#playNow-BTN:hover {
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
