@@ -1,10 +1,15 @@
+body {
+    background-color: var(--background-color);
+}
+
 .characters-page{
 
     min-height:100vh;
 
-    background:#211513;
+    /* background:#211513; */
 
-    padding:35px 70px;
+    padding:24px 20px;
+
 }
 
 /* ---------------- HEADER ---------------- */
