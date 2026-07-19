@@ -4,6 +4,9 @@ import CTAButton from '../components/CTAButton'
 import bubblyMan from '../assets/home/bubbly male chef.png'
 import bubblyLady from '../assets/home/bubbly female chef.png'
 
+// POLYGON-BODER //
+import PolygonBorder from '../components/PolygonBorder'
+
 // MEET THE CHEF CARDS //
 import ChefCards from '../components/ChefCards'
 import emeka from '../assets/home/chef-emeka.png'
@@ -85,39 +88,9 @@ function Home() {
 
             <div id='imageSide'>
                
-                <svg
-                    className="aboutBorder"
-                    viewBox="0 0 1200 420"
-                    preserveAspectRatio="none"
-                    aria-hidden="true"
-                >
-                    <path
-                        d="
-                        M30 20
-                        H410
-                        L455 55
-                        H745
-                        L790 20
-                        H1170
-                        L1195 45
+               {/* POLYGONBORDER */}
+                <PolygonBorder />
 
-                        V375
-
-                        L1170 400
-
-                        H790
-                        L745 365
-                        H455
-                        L410 400
-                        H30
-
-                        L5 375
-
-                        V45
-
-                        Z"
-                    />
-                </svg>
                 <img src={bubblyMan} id='bubblyMan' alt="Nigerian Chef" />
 
                 <div id='aboutGame-text'>
@@ -299,39 +272,9 @@ function Home() {
         <section id='joinCommunity-section'>
             
             <div id='content-wrapper'>
-                <svg
-                className="aboutBorder"
-                viewBox="0 0 1200 420"
-                preserveAspectRatio="none"
-                aria-hidden="true"
-                >
-                    <path
-                        d="
-                        M30 20
-                        H410
-                        L455 55
-                        H745
-                        L790 20
-                        H1170
-                        L1195 45
-
-                        V375
-
-                        L1170 400
-
-                        H790
-                        L745 365
-                        H455
-                        L410 400
-                        H30
-
-                        L5 375
-
-                        V45
-
-                        Z"
-                    />
-                </svg>
+                
+                {/* POLYGONBORDER */}
+                <PolygonBorder />
 
                 <div id='communityText'>
                     <h4>COOK TOGETHER, WIN TOGETHER.</h4>
