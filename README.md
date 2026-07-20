@@ -23,33 +23,41 @@ Naija Kitchen Chaos is a fast-paced multiplayer cooking game where players team 
 ---
 
 ## 📁 Project Structure
-src/  
+src/
 ├── pages/  
-│   ├── Home.tsx  
 │   ├── About.tsx  
-│   ├── Leaderboard.tsx  
+│   ├── Characters.tsx  
 │   ├── Community.tsx  
-│   └── Characters.tsx  
+│   ├── Home.tsx  
+│   └── Leaderboard.tsx  
 ├── components/  
+│   ├── ChefCards.tsx  
+│   ├── CTAButton.tsx  
+│   ├── Footer.tsx  
+│   ├── GameFTsCards.tsx  
 │   ├── Header.tsx  
-│   └── Footer.tsx  
+│   ├── LatestNewsCard.tsx  
+│   ├── SurviveKitchen.tsx  
+│   └── TournamentCard.tsx  
 ├── assets/  
-│   ├── home/  
 │   ├── about/  
-│   ├── leaderboard/  
-│   ├── community/  
 │   ├── characters/  
-│   └── shared/  
+│   ├── community/  
+│   ├── home/  
+│   ├── leaderboard/  
+│   ├── react.svg  
+│   ├── shared/  
+│   └── vite.svg  
 ├── styles/  
-│   ├── Home.css  
 │   ├── About.css  
-│   ├── Leaderboard.css  
-│   ├── Community.css  
 │   ├── Characters.css  
+│   ├── Community.css  
+│   ├── Footer.css  
 │   ├── Header.css  
-│   └── Footer.css  
-├── index.css  
+│   ├── Home.css  
+│   └── Leaderboard.css  
 ├── App.tsx  
+├── index.css  
 └── main.tsx  
 
 ---
@@ -93,16 +101,14 @@ git checkout -b your-branch-name
 
 ## 👥 Team
 
-### Product Owner
+### Team Leaders
 | Name | Role |
 |------|------|
-| Ebuka Nwaudah | Product Manager |
-
-### Development
-| Name | Role |
-|------|------|
+| Ebuka Nwaudah | Product Manager
 | Tobechukwu Aki | Development Team Lead |
 
+##
+### 💻 Development Team
 ### Game Development
 | Name | Role |
 |------|------|

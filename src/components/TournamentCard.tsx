@@ -38,11 +38,11 @@ function TournamentCard ({player1Image, player2Image, status, score, matchTitle,
                 <p>{date}</p>
 
                 <div className="tournament-socials">
-                    <a href={youtubeLink} target="_blank">
+                    <a href={youtubeLink} id='youtube-link' target="_blank">
                         <i className="fa-brands fa-youtube"></i> Youtube
                     </a>
-                    <a href={instagramLink} target="_blank">
-                        <i className="fa-brands fa-instagram"></i> Instagram
+                    <a href={instagramLink} id='instagram-link' target="_blank">
+                        <i className="fa-brands fa-square-instagram"></i> Instagram
                     </a>
                 </div>
             </div>

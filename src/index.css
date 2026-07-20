@@ -13,14 +13,16 @@
   --background-color: #201616;
   --slide-BTN-bg-color: #332F2F;
   --BTNs-bg-and-borders-orange: #FFB54D;
-  --BTN-writeUp: #FFFF;
-  --heading-fonts-color: #FFFFFF;
+  --BTNs-bg-color2: #201616;
+  --BTN-writeUp: #F9F9F9;
+  --heading-fonts-color: #F9F9F9;
   --pTags-font-color: #ADACAC;
   --green-color: #83CD55;
   --red-color: #FD3134;
+  --social-color: #F9F9F9;
 }
 
 body {
-  margin: 0px 50px 0px 50px;
+  margin: 0px 80px 0px 80px;
   font-family: var(--font-family);
 }

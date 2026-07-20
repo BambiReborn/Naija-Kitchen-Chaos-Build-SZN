@@ -4,16 +4,19 @@ import CTAButton from '../components/CTAButton'
 import bubblyMan from '../assets/home/bubbly male chef.png'
 import bubblyLady from '../assets/home/bubbly female chef.png'
 
+// POLYGON-BODER //
+import PolygonBorder from '../components/PolygonBorder'
+
 // MEET THE CHEF CARDS //
 import ChefCards from '../components/ChefCards'
-import mamaNkechi from '../assets/home/mama-nkechi.png'
-import chinedu from '../assets/home/chinedu.png'
+import emeka from '../assets/home/chef-emeka.png'
+import chinedu from '../assets/home/chef-chinedu.png'
 import ngozi from '../assets/home/ngozi.png'
-import tunde from '../assets/home/tunde.png'
+import tunde from '../assets/home/chef-tunde.png'
 import AIChef from '../assets/home/AI chef.png'
 
 const chefs = [
-    { image: mamaNkechi, name: 'MAMA NKECHI', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
+    { image: emeka, name: 'EMEKA', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
     { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feet. Always three steps ahead.' },
     { image: ngozi, name: 'NGOZI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
     { image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.' },
@@ -78,13 +81,17 @@ function Home() {
                 </h2>
 
                 <nav>
-                    <CTAButton text="PLAY NOW" href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" />
-                    <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="#" />
+                    <CTAButton text="PLAY NOW" href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" className="textSide-playNow"/>
+                    <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="#" className="textSide-watchTrailer" />
                 </nav>
             </div>
 
             <div id='imageSide'>
-                <img src={bubblyMan} alt="Nigerian Chef" />
+               
+               {/* POLYGONBORDER */}
+                <PolygonBorder />
+
+                <img src={bubblyMan} id='bubblyMan' alt="Nigerian Chef" />
 
                 <div id='aboutGame-text'>
                     <h4>
@@ -102,9 +109,9 @@ function Home() {
                     </p>
 
                     <CTAButton text="DOWNLOAD" href="https://studioultra.itch.io/naija-kitchen-chaos" className="downloadBTN" />
-
-                    <img src={bubblyLady} alt="Nigerian Lady" />
                 </div>
+
+                <img src={bubblyLady} id='bubblyLady' alt="Nigerian Lady" />
             </div>
         </section>
 
@@ -139,38 +146,46 @@ function Home() {
             </div>
 
         </section>
-
+        
+        {/* GAME FEATURES SECTION */}
         <section id='gameFTsSection'>
             <div className="line-head">
                 <h3>
-                    MEET THE CHEFS
+                    GAME FEATURES
                 </h3>
             </div>
+            
+            <div id='fire-cheff-wrapper'>
+                <img src={fireChef} id='fire-chef' alt="Fire Chef" />
+            </div>
 
-            <img src={fireChef} alt="Fire Chef" />
+            {/* CARDS */}
+            
+                <GameFTsCards 
+                    image={increaseDifficulty}
+                    title={<>INCREASINGLY <br />
+                        DIFFICULT KITCHENS</>}
+                    description={<>From small kitchen to    bustling <br />
+                        bukkas, chaos level goes higher</>}
+                    className="topRight"
+                />
 
-            <GameFTsCards 
-                image={increaseDifficulty}
-                title="INCREASINGLY DIFFICULT KITCHENS"
-                description="From small kitchen to bustling bukkas, chaos level goes higher"
-                className="topRight"
-            />
+                {/* CARD 2 */}
+                <GameFTsCards 
+                    image={multiPlayer}
+                    title={<>LOCAL <br /> MULTIPLAYER</>}
+                    description={<>Team up with friends in <br /> local cook-up and <br /> dominate the ktichen</>}
+                    className = "centerLeft"
+                />
 
-            {/* CARD 2 */}
-            <GameFTsCards 
-                image={multiPlayer}
-                title="LOCAL MULTIPLAYER"
-                description="Team up with friends in local cook-up and dominate the ktichen"
-                className = "centerLeft"
-            />
-
-            {/* CARD 3 */}
-            <GameFTsCards 
-                image = {timeChallenges}
-                title = "TIME-BASED CHALLENGES"
-                description = "Race against the clock, manage multiple orders and keep your cool"
-                className = "bottomRight"
-            />
+                {/* CARD 3 */}
+                <GameFTsCards 
+                    image = {timeChallenges}
+                    title = {<>TIME-BASED <br /> CHALLENGES</>}
+                    description = {<>Race against the clock, <br /> manage multiple orders <br /> and keep your cool</>}
+                    className = "bottomRight"
+                />
+            
         </section>
 
         {/* GAMING TOURNAMENT SECTION */}
@@ -235,19 +250,19 @@ function Home() {
             </div>
 
             <div id='topPlayers-images'>
-                <div id='img1-div'>
+                <div id='img1-div' className="topPlayers-img-div">
                     <img src={Emeka12} id='p1' className="topPlayers-img" alt="Emeka12 - P1" />
                 </div>
 
-                <div id='img2-div'>
+                <div id='img2-div' className="topPlayers-img-div">
                     <img src={proCook} id='p2' className="topPlayers-img" alt="Pro Cook - P2" />
                 </div>
 
-                <div id='img3-div'>
+                <div id='img3-div' className="topPlayers-img-div">
                     <img src={iLuvsuya} id='p3' className="topPlayers-img" alt="iLuvsuya - P3" />
                 </div>
 
-                <div id='img4-div'>
+                <div id='img4-div' className="topPlayers-img-div">
                     <img src={chefChi} id='p4' className="topPlayers-img" alt="Chefchi - P4" />
                 </div>
             </div>
@@ -255,7 +270,12 @@ function Home() {
 
         {/* JOIN COMMUNITY SECTION */}
         <section id='joinCommunity-section'>
+            
             <div id='content-wrapper'>
+                
+                {/* POLYGONBORDER */}
+                <PolygonBorder />
+
                 <div id='communityText'>
                     <h4>COOK TOGETHER, WIN TOGETHER.</h4>
                     <h3>
@@ -296,7 +316,7 @@ function Home() {
                     image = {newsLady}
                     author= "By Eleganza"
                     date = "21st July, 2026"
-                    description = "Breaking Barriers and Shaping the Future"
+                    description = {<>Breaking Barriers and Shaping the <br />Future</>}
                     readMoreLink= "#"
                     className = "newsCard"
                 />
@@ -306,7 +326,7 @@ function Home() {
                     image = {newsMan}
                     author= "By Gerald"
                     date = "30th July, 2026"
-                    description = "Strategies for Dominating your Favorite Game"
+                    description = {<>Strategies for Dominating your <br />Favorite Game</>}
                     readMoreLink= "#"
                     className = "newsCard"
                 />
@@ -316,7 +336,7 @@ function Home() {
                     image = {newsLady}
                     author= "By Ifechukwu"
                     date = "16th July, 2026"
-                    description = "Taking Cooking to the Next Level"
+                    description = {<>Taking Cooking to the Next Level</>}
                     readMoreLink= "#"
                     className = "newsCard"
                 />
@@ -329,7 +349,7 @@ function Home() {
         />
 
         {/* FOOTER */}
-        
+
     </main>
   )
 }
