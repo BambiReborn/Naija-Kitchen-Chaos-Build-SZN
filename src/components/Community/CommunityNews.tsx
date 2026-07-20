@@ -71,9 +71,10 @@ function CommunityNews () {
                             <img src={Star} alt="starIcon" />
                             <img src={Star} alt="starIcon" />
                         </div>
+                        <p className="testimonialText">“ I have made friends from different states and parts of Nigeria i have never  been to through Naija Kitchen Chaos Community”</p>
                         <div className="profilewithText">
-                            <p className="testimonialText">“ I have made friends from different states and parts of Nigeria i have never  been to through Naija Kitchen Chaos Community”</p>
                             <img src={Emeka} alt="emekaProfileImage" />
+                            <p className="profileText">Emeka</p>
                         </div>
                     </div>
 
@@ -85,9 +86,10 @@ function CommunityNews () {
                             <img src={Star} alt="starIcon" />
                             <img src={Star} alt="starIcon" />
                         </div>
+                        <p className="testimonialText">“ I have made friends from different states and parts of Nigeria i have never  been to through Naija Kitchen Chaos Community”</p>
                         <div className="profilewithText">
-                            <p className="testimonialText">“Finally! A Nigerian game that celebrates our food culture. The weekly cooking battles are addictive, i  can’t get enough”</p>
                             <img src={Chi} alt="chiProfileImage" />
+                            <p className="testimonialText">Chi</p>
                         </div>
                     </div>
                 </div>

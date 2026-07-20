@@ -176,3 +176,496 @@ span {
     max-width: 154px;
     max-height: 135px;
 }
+
+/* Card section */
+.communityCardLists {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.communityCardCont {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.communityCard {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px;
+    border: 1px solid #45B400;
+    border-radius: 16px;
+    gap: 12px;
+    width: 100%;
+    max-width: 390px;
+    height: 421px;
+    align-items: center;
+}
+
+.communityCardTextCont {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.communityCardHeading {
+    font-size: 20px;
+    font-weight: 600;
+    align-self: center;
+    color: white;
+}
+
+.communityCardText {
+    font-size: 16px;
+    font-weight: 400;
+    align-self: center;
+    color: #ADACAC;
+}
+
+.communityCardItems {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+}
+
+.cardItemTop {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+}
+
+.cardItem {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardItem img {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.cardItemText {
+    font-weight: 400;
+    font-size: 14px;
+    color: #ADACAC;
+}
+
+.cardItemBottom {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+}
+
+.communityCardImage img {
+    object-fit: contain;
+}
+
+.cardOne img {
+    max-width: 343px;
+    max-height: 162px;
+}
+
+.tertiaryButton {
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: 1px solid #FFC16B;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F9F9F9;
+    width: fit-content;
+    background-color: #201616;
+}
+
+.cardTwo img {
+    max-width: 343px;
+    max-height: 183px;
+}
+
+.cardThree img {
+    max-width: 343px;
+    max-height: 202px;
+}
+
+
+/* Community Members */
+.communityMembers {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.membersHeadline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #FFB54D;
+    padding-bottom: 8px;
+}
+
+.membersHeading {
+    font-weight: 600;
+    font-size: 24px;
+    color: #F9F9F9;
+}
+
+.membersTextCont {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px 16px;
+}
+
+.membersText {
+    color: #F9F9F9;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.membersTextCont img {
+    width: 20px;
+    height: 20px;
+}
+
+.membersCardCont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.membersCardTop {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.membersCard {
+    display: flex;
+    padding: 12px;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    border: 0.5px solid #FFB54D;
+    border-radius: 16px;
+}
+
+.membersCard img {
+    width: 70px;
+    height: 70px;
+}
+
+.membersCardTextCont {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.membersCardBold {
+    font-weight: 600;
+    font-size: 20px;
+    color: #F9F9F9;
+}
+
+.memberCardNorm {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ADACAC;
+}
+
+.memberCardYellow {
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFB54D;
+}
+
+.textWithStar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textWithStar img {
+    width: 13px;
+    height: 13px;
+}
+
+.membersCardBottom {
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Community News */
+.newsFeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.upcomingEvents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.eventsHeadline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #FFB54D;
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+.eventsHeading {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+}
+
+.eventsTextCont {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px 16px;
+}
+
+.eventsText {
+    color: #F9F9F9;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.eventsTextCont img {
+    width: 20px;
+    height: 20px;
+}
+
+.eventsList {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 598px;
+}
+
+.eventsCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 0.5px solid #FFB54D;
+    background-color: #AA793333;
+    width: 100%;
+    gap: 80px;
+}
+
+.eventsCardMix {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+
+.eventsCardMix img {
+    width: 62px;
+    height: 45px;
+}
+
+.cardMixText {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.eventsCardText {
+    font-weight: 600;
+    font-size: 18px;
+    color: #848282;
+}
+
+.eventCardYellow {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFB54D;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.testimonialCardCont {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.testimonialCard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 32px;
+    border-radius: 12px;
+    border: 1px solid #45B400;
+    max-width: 235px;
+}
+
+.cardStars {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.cardStars img {
+    width: 20px;
+    height: 20px;
+}
+
+.testimonialText {
+    font-weight: 600;
+    font-size: 18px;
+    color: #848282;
+}
+
+.profilewithText {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilewithText img {
+    width: 48px;
+    height: 48px;
+}
+
+.profileText {
+    font-weight: 600;
+    font-size: 20px;
+    color: #F9F9F9;
+}
+
+
+/* Community FAQ */
+.communityQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.questionHeading {
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+}
+
+.questionList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 920px;
+}
+
+.questionCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #553C1AB2;
+    border-radius: 12px;
+    border: 1px solid #FFCE88;
+}
+
+.questionCard img {
+    width: 24px;
+    height: 24px;
+}
+
+.questionText {
+    font-weight: 600;
+    font-size: 20px;
+    color: #CECDCD;
+}
+
+
+/* CTA */
+.kitchen {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kitchenTextButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 726px;
+    align-items: center;
+}
+
+.kitchenTextCont {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 386px;
+}
+
+.kitchenHeading {
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+}
+
+.yellow {
+    color: #FFB54D;
+}
+
+.kitchenText {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ADACAC;
+}
+
+.kitchenButtonCont {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.kitchen img {
+    max-width: 382px;
+    max-height: 255px;
+}

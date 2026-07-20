@@ -2,7 +2,7 @@ import ArrowIcon from '../../assets/community/arrow-down.svg'
 
 function CommunityFAQ () {
     return (
-        <section className="communityquestion">
+        <section className="communityQuestion">
             <h3 className="questionHeading">COMMUNITY FAQ</h3>
 
             <div className="questionList">

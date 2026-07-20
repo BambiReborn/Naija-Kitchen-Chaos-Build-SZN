@@ -1,8 +1,8 @@
 import ArrowImg from '../../assets/community/arrow-right.svg'
 import StarIcon from '../../assets/community/star-icon.svg'
 import TobiImg from '../../assets/community/member-card-one.png'
-import ChiImg from '../../assets/community/card-two.png'
-import AdaImg from '../../assets/community/card-three.png'
+import ChiImg from '../../assets/community/member-card-two.png'
+import AdaImg from '../../assets/community/member-card-three.png'
 import EmekaImg from '../../assets/community/member-card-four.png'
 
 function CommunityMembers () {
@@ -11,7 +11,7 @@ function CommunityMembers () {
             <div className="membersHeadline">
                 <h6 className="membersHeading">FEATURED COMMUNITY MEMBERS</h6>
                 <div className="membersTextCont">
-                    <p className="membersText">VIEW ALL MEMEBERS</p>
+                    <p className="membersText">VIEW ALL MEMBERS</p>
                     <img src={ArrowImg} alt="arrowImage" />
                 </div>
             </div>

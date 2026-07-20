@@ -40,7 +40,7 @@ function CommunityCards () {
                         </div>
                     </div>
 
-                    <div className="communityCardImage">
+                    <div className="communityCardImage cardOne">
                         <img src={CardOne} alt="cardOneImage" />
                     </div>
 
@@ -79,7 +79,7 @@ function CommunityCards () {
                         </div>
                     </div>
 
-                    <div className="communityCardImage two">
+                    <div className="communityCardImage cardTwo">
                         <img src={CardTwo} alt="cardTwoImage" />
                     </div>
 
@@ -114,7 +114,7 @@ function CommunityCards () {
                         </div>
                     </div>
 
-                    <div className="communityCardImage three">
+                    <div className="communityCardImage cardThree">
                         <img src={CardThree} alt="cardThreeImage" />
                     </div>
 
