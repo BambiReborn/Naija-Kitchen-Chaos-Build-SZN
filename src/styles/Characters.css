@@ -1,5 +1,8 @@
 body {
     background-color: var(--background-color);
+    margin: 0px 50px 0px 50px;
+
+    
 }
 
 .characters-page{
@@ -12,7 +15,7 @@ body {
 
 }
 
-/* ---------------- HEADER ---------------- */
+/* ----- HEADER ---- */
 
 .characters-header{
 
@@ -25,7 +28,7 @@ body {
     margin-bottom:40px;
 }
 
-/* ---------------- CONTENT ---------------- */
+/* ---- CONTENT ------ */
 
 .characters-content{
 
@@ -42,7 +45,7 @@ body {
     z-index:2;
 }
 
-/* ---------------- BOTTOM ---------------- */
+/* ----- BOTTOM ------ */
 
 .characters-bottom{
     position:relative;

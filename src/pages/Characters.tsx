@@ -31,7 +31,7 @@ export default function Characters() {
   return (
     <main className="characters-page">
 
-      {/* ================= HEADER ================= */}
+      {/* ==== HEADER ====== */}
 
       <header className="characters-header">
 
@@ -43,7 +43,7 @@ export default function Characters() {
 
       </header>
 
-      {/* ================= CONTENT ================= */}
+      {/* ====== CONTENT ===== */}
 
       <section className="characters-content">
 
@@ -61,7 +61,7 @@ export default function Characters() {
 
       </section>
 
-      {/* ================= BOTTOM ================= */}
+      {/* ===== BOTTOM ====== */}
 
       <section className="characters-bottom">
 

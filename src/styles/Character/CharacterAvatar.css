@@ -1,6 +1,4 @@
-/* ==========================================
-   CHARACTER AVATAR
-========================================== */
+/*CHARACTER AVATAR*/
 
 .avatar-wrapper{
 
@@ -47,9 +45,7 @@
   transform: scale(1.02);
 }
 
-/* ==========================================
-   NAVIGATION ARROWS
-========================================== */
+/*NAVIGATION ARROWS */
 
 .avatar-arrow {
   position: absolute;
