@@ -1,0 +1,67 @@
+/* Container for the entire row of currency boxes */
+.currency-bar {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+  padding: 15px; 
+}
+
+/* Individual pill container */
+.currency-box {
+  width: 135px;
+  height: 40px;
+  background: #3A2F2C; 
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  
+  padding-left: 45px; 
+  padding-right: 12px;
+  box-sizing: border-box; 
+  
+  justify-content: space-between; 
+  position: relative; 
+
+/* The absolute icon that overflows the container */
+.currency-icon {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  
+  left: -18px; 
+  
+  top: 50%;
+  transform: translateY(-50%); 
+  
+  z-index: 2; 
+  pointer-events: none; 
+}
+
+/* Value text styling */
+.currency-amount {
+  font-size: 18px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.add-icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-icon {
+  font-size: 16px;      
+  color: #A5A5A5;       
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.add-icon-container:hover .add-icon {
+  color: #ffffff;
+}
+}

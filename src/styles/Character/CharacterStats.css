@@ -1,0 +1,57 @@
+/* CHARACTER STATS */
+
+.stats-panel {
+  width: 100%;
+  position: relative;
+  padding-top: 24px;
+}
+
+.stats-panel h1 {
+  color: #f8b24c;
+  font-family: Typography/Font name/Heading text;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  margin-bottom: 28px;
+}
+
+.upgrade-row{
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:12px;
+
+    padding-left:170px;   
+}
+.upgrade-btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 7rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.upgrade-btn:hover{
+
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
+.upgrade-btn:active{
+
+    transform:translateY(0);
+}

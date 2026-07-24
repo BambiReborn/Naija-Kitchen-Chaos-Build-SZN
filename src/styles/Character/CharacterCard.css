@@ -1,0 +1,84 @@
+.character-card{
+
+width:330px;
+
+height:120px;
+
+background:#3B3B3B;
+
+clip-path:polygon(
+0 0,
+100% 0,
+94% 100%,
+0 100%
+);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.character-card:hover{
+
+transform:translateX(8px);
+
+}
+
+.character-card.active{
+
+background:#494949;
+
+}
+
+.character-card h2{
+
+font-size:22px;
+
+font-weight:600;
+
+color:white;
+
+margin:0;
+
+}
+
+.divider{
+
+width:100%;
+
+height:1px;
+
+background:#6B6B6B;
+
+margin:8px 0;
+
+}
+
+.character-card h3{
+
+font-size:18px;
+
+color:#BDBDBD;
+
+margin:0;
+
+}
+
+.character-card p{
+
+margin-top:4px;
+
+font-size:13px;
+
+color:#BDBDBD;
+
+}
