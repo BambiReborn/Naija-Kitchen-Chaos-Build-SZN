@@ -108,7 +108,12 @@ function Home() {
                         complete chaos
                     </p>
 
-                    <CTAButton text="DOWNLOAD" href="https://studioultra.itch.io/naija-kitchen-chaos" className="downloadBTN" />
+                    <CTAButton 
+                        text="DOWNLOAD" 
+                        href="/download"
+                        internal
+                        className="downloadBTN" 
+                    />
                 </div>
 
                 <img src={bubblyLady} id='bubblyLady' alt="Nigerian Lady" />

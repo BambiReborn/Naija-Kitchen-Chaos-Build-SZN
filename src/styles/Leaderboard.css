@@ -1,0 +1,170 @@
+/* STYLING BEGINS */
+/* STYLING BEGINS */
+#rankingCards-section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    min-height: 80vh;
+    gap: clamp(2rem, 5vw, 5rem);
+    padding-inline: clamp(1rem, 5vw, 5rem);
+    box-sizing: border-box;
+    
+}
+
+.rankCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: clamp(13rem, 18vw, 17rem);
+    flex-shrink: 0;
+}
+
+.rankingcard-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: clamp(15rem, 25vw, 20rem);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: none;
+    border-radius: 0 0 0.6rem 0.6rem;
+    
+    
+}
+
+.rankImage {
+    position: absolute;
+    top: 1.5rem;
+    width: clamp(4.5rem, 7vw, 6.5rem);
+    height: auto;
+    z-index: 2;
+}
+.playerImage {
+    position: absolute;
+    bottom: 0.5rem;
+    width: clamp(8rem, 12vw, 12rem);
+    height: auto;
+    z-index: 1;
+}
+
+
+/* FIRST PLACE CARD */
+#first-place {
+    position: relative;
+    z-index: 2;
+    transform: translateY(5rem);
+}
+
+#first-place .rankingcard-visual {
+    height: 23rem;
+    background: linear-gradient(
+        to bottom,
+        #201616,
+        #FDC205
+    );
+    box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+#first-place .rankImage {
+    top: 2rem;
+}
+
+#first-place .playerImage {
+    width: 10rem;
+}
+
+
+/* SECOND PLACE */
+#second-place {
+    transform: translateY(5rem);
+}
+
+#second-place .rankingcard-visual {
+    height: 22rem;
+    background: linear-gradient(
+        to bottom,
+        #05152F,
+        #4286F5
+    );
+}
+
+
+/* THIRD PLACE */
+#third-place {
+    transform: translateY(5rem);
+}
+
+#third-place .rankingcard-visual {
+    height: 21rem;
+    background: linear-gradient(
+        to bottom,
+        #201616,
+        #F34235
+    );
+}
+
+
+/* TEXT */
+.rankCards h3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.rankCards p {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+
+/* POINT COLORS */
+#first-place p {
+    color: #c18a16;
+}
+
+#second-place p {
+    color: #1264c9;
+}
+
+#third-place p {
+    color: #a62d1c;
+}
+
+
+/* RANKING BOARD SECTION */
+/* ..................... */
+
+#rankBoard-section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+    margin-top: 80px;
+
+}
+
+.rank-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADACAC;
+    /* gap: 2rem; */
+    width: clamp(30rem, 80vw, 80rem);
+
+}
+
+#playerIcon-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+

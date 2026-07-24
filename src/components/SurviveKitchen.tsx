@@ -24,7 +24,8 @@ function SurviveKitchen({ image }: SurviveKitchenProps) {
         <CTAButton text="PLAY NOW" href="#" className="playNow-btn" />
         <CTAButton
           text={<>DOWNLOAD DEMO <i className="fa-solid fa-arrow-down"></i></>}
-          href="#"
+          href="/download"
+          internal
           className="downloadDemo-btn"
         />
       </div>
