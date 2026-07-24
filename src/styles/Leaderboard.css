@@ -145,18 +145,38 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    gap: 2rem;
+    gap: .5rem;
     margin-top: 80px;
+    max-height: 40rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #201616 #ADACAC;
 
 }
+#rankBoard-section::-webkit-scrollbar {
+    width: .8rem;
+}
+#rankBoard-section::-webkit-scrollbar-track {
+    background: #ADACAC;
+}
+#rankBoard-section::-webkit-scrollbar-thumb {
+    background: #201616;
+    border-radius: 1rem;
+}
+
 
 .rank-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ADACAC;
+    background-color: #332F2F;
+    border: 1px solid #ADACAC;
+    border-radius: 12px;
     /* gap: 2rem; */
     width: clamp(30rem, 80vw, 80rem);
+    padding: .5rem;
+    
 
 }
 
@@ -164,7 +184,42 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: .8rem;
+    margin-left: 5%;
+}
+
+.starIcon {
+    color: #FFB54D;
+}
+
+.rankPlayer-name {
+    color: var(--heading-fonts-color);
 }
 
 
+/* POINTS BAR */
+.rankPoints {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 10%;
+}
 
+.pointsText {
+    color: var(--heading-fonts-color);
+}
+
+.progressBar {
+    width: 7rem;
+    height: .8rem;
+    background: #ADACAC;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progressBar-fill {
+    height: 100%;
+    background: #FFB54D;
+    border-radius: 1rem;
+}
