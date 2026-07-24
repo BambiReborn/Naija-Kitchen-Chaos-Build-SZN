@@ -101,16 +101,14 @@ git checkout -b your-branch-name
 
 ## 👥 Team
 
-### Product Owner
+### Team Leaders
 | Name | Role |
 |------|------|
-| Ebuka Nwaudah | Product Manager |
-
-### Development
-| Name | Role |
-|------|------|
+| Ebuka Nwaudah | Product Manager
 | Tobechukwu Aki | Development Team Lead |
 
+##
+### 💻 Development Team
 ### Game Development
 | Name | Role |
 |------|------|
