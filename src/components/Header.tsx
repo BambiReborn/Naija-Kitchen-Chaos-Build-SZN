@@ -1,9 +1,13 @@
 // IMPORTS //
 import '../styles/Header.css'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import logo from '../assets/shared/Logo.svg'
 
 function Header() {
+
+  const location = useLocation()
+  if (location.pathname === '/characters' || location.pathname === '/login') return null
+
   return (
     <header>
         <img src={logo} alt="Naija Kitchen Chaos | NKC" />
