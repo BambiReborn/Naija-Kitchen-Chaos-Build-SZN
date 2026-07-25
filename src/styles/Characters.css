@@ -17,6 +17,18 @@ body {
 
 /* ----- HEADER ---- */
 
+#back-home {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--pTags-font-color);
+    cursor: pointer;
+}
+
+#back-home:hover {
+    color: #FFB54D;
+}
+
 .characters-header{
 
     display:flex;

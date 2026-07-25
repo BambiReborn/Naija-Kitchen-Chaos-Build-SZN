@@ -10,17 +10,18 @@ import PolygonBorder from '../components/PolygonBorder'
 // MEET THE CHEF CARDS //
 import ChefCards from '../components/ChefCards'
 import emeka from '../assets/home/chef-emeka.png'
-import chinedu from '../assets/home/chef-chinedu.png'
 import ngozi from '../assets/home/ngozi.png'
+import chinedu from '../assets/home/chinedu.png'
+import mamaNkechi from '../assets/home/mama-nkechi.png'
 import tunde from '../assets/home/chef-tunde.png'
-import AIChef from '../assets/home/AI chef.png'
 
 const chefs = [
     { image: emeka, name: 'EMEKA', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
-    { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feet. Always three steps ahead.' },
-    { image: ngozi, name: 'NGOZI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
-    { image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.' },
-    { image: AIChef, name: 'AI-SOUS CHEF', role: 'The Digital Assistant', description: 'Smart, helpful and doesn\'t complain.' },
+    { image: ngozi, name: 'MAMA NGOZI', role: 'The Digital Assistant', description: 'Smart, helpful and doesn\'t complain.' },
+    { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feets. Always three steps ahead.' },
+    { image: mamaNkechi, name: 'MAMA NKECHI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
+    {image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.'}
+
 ]
 
 // GAME FEATURES SECTION //

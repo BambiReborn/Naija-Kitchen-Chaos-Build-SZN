@@ -21,19 +21,26 @@ function Header() {
             <Link to ="/community">COMMUNITY</Link>
             <Link to ="/characters">CHARACTERS</Link>
             <Link to ="/download">DOWNLOAD</Link>
-            <Link to ="/login">LOGIN</Link>
+            
         </nav>
 
-        {location.pathname !== '/leaderboard' ? (
-          <>
-            <a href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" target="_blank" id='playNow-BTN'>
-                PLAY NOW
-            </a>
-            {/* <Link to ="/login">LOGIN</Link> */}
-          </>
-        ) : (
-          <div style={{ width: '8%' }}></div>
-        )}
+
+        <nav id='navBTNs'>
+          {/* LOGIN BTN */}
+          <Link to ="/login" id='login-BTN'>LOGIN</Link>
+
+
+          {location.pathname !== '/leaderboard' ? (
+            <>
+              <a href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" target="_blank" id='playNow-BTN'>
+                  PLAY NOW
+              </a>
+              {/* <Link to ="/login">LOGIN</Link> */}
+            </>
+          ) : (
+            <div style={{ width: '8%' }}></div>
+          )}
+        </nav>
 
     </header>
   )
