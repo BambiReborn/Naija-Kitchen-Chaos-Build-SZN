@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import LogoImg from '../../assets/login/Login-logo.svg'
 
 function SetPassword () {
     const navigate = useNavigate()
@@ -12,14 +13,16 @@ function SetPassword () {
             alert('Passwords do not match')
             return
         }
-        navigate('/login')
+        navigate('/createID')
     }
 
     return (
         <section className="signupPage">
             <div className="signupForm">
 
-                <div className="LoginLogo"></div>
+                <div className="LoginLogo">
+                    <img src={LogoImg} alt="" />
+                </div>
 
                 <div className="LoginTextCont">
                     <h5 className="LoginText">Set your password</h5>

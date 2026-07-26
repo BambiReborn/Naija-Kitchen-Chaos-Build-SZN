@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom";
+import LogoImg from '../../assets/login/Login-logo.svg'
 
 function Signup () {
     const navigate = useNavigate()
@@ -10,21 +11,23 @@ function Signup () {
     const [country, setCountry] = useState('')
 
     const handleNext = () => {
-        navigate('/setPassword')
+        navigate('/enterEmail')
     }
 
     return (
-        <section className="signupPage">
-            <div className="signupForm">
+        <section className="loginPage">
+            <div className="loginForm">
 
-                <div className="LoginLogo"></div>
-
-                <div className="LoginTextCont">
-                    <h5 className="LoginText">Create your account</h5>
-                    <div className="LoginLine"></div>
+                <div className="loginLogo">
+                    <img src={LogoImg} alt="" />
                 </div>
 
-                <div className="signUpInputCont">
+                <div className="loginTextCont">
+                    <h5 className="loginText">Create your account</h5>
+                    <div className="loginLine"></div>
+                </div>
+
+                <div className="loginInputCont">
                     <div className="labelInputCont">
                         <p className="labelText">Date of birth</p>
 
@@ -50,7 +53,7 @@ function Signup () {
                         </div>
                     </div>
 
-                    <div className="countryInputCont">
+                    <div className="labelInputCont">
                         <p className="labelText">Country/Region</p>
                         <div className="labelInput">
                             <select value={country} onChange={(e) => setCountry(e.target.value)}>
