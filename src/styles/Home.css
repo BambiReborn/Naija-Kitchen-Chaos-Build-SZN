@@ -342,7 +342,7 @@ body {
 }
 
 .writeUp-wrapper p{
-    text-align: start;
+    text-align: center;
     width:90%;
     margin:1.2rem auto 0;
     color:#BFBFBF;
@@ -926,4 +926,9 @@ body {
     height:auto;
     display:block;
 }
+
+
+
+/* //RESPONSIVE LAYOUTS// */
+/* ====================== */
 

@@ -12,6 +12,7 @@ header {
     display: flex;
     align-items: center;
     gap: 3rem;
+    /* margin-right: 3rem; */
     
 }
 
@@ -25,6 +26,40 @@ header {
 
 #navLink a:hover {
     color: #FFB54D;
+}
+
+
+/*  NAV-BTNS */
+#navBTNs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid #FFF; */
+}
+
+#login-BTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-color2);
+    width: 7rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid var(--BTNs-bg-and-borders-orange);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+#login-BTN:hover {
+    /* background-color: #ffb54d9d; */
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FFB54D;
 }
 
 #playNow-BTN {

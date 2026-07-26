@@ -10,8 +10,8 @@ function CommunityKitchen () {
             </div>
 
             <div className="kitchenButtonCont">
-                <button className="primaryButton">PLAY NOW</button>
-                <button className="secondaryButton">DOWNLOAD DEMO</button>
+                <button id='playNow'>PLAY NOW</button>
+                <button id='download-demo'>DOWNLOAD DEMO</button>
             </div>
 
             </div>

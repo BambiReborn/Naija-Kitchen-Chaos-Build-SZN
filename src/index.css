@@ -20,6 +20,16 @@
   --green-color: #83CD55;
   --red-color: #FD3134;
   --social-color: #F9F9F9;
+
+  /* Leaderboard cards */
+  --first--card: #FDC205;
+  --first-card-gradient: #33240F;
+
+  --second-card: #4286F5;
+  --second-card-gradient: #05152F;
+
+  --third-card: #F34235;
+  --third-card-gradient: #201616;
 }
 
 body {

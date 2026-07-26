@@ -97,6 +97,7 @@
     color: #FFB54D;
 }
 
+
 /* SignUp Style */
 .labelInputCont {
     width: 80%;
@@ -126,4 +127,9 @@
     flex-direction: row;
     gap: 12px;
     align-items: flex-start;
+}
+
+.acceptCheckbox img {
+    width: 20px;
+    height: 20px;
 }
