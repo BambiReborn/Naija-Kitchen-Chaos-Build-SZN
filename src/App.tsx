@@ -6,6 +6,12 @@ import Community from './pages/Community'
 import Characters from './pages/Characters'
 import Download from './pages/Download'
 // LOGIN FLOW//
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import SetPassword from './pages/SetPassword'
+import EnterEmail from './pages/EnterEmail'
+import CreateID from './pages/CreateID'
+import AccountSuccess from './pages/AccountSuccess'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -19,13 +25,14 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/community" element={<Community />} />
         <Route path="/characters" element={<Characters />} />
-        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/download" element={<Download />} />
-        {/* <Route path="/signup" element={<signup />} /> */}
-        {/* <Route path="/setPassword" element={<setPassword />} /> */}
-        {/* <Route path="/enterEmail" element={<enterEmail />} /> */}
-        {/* <Route path="/createID" element={<createID />} /> */}
-        {/* <Route path="/accountSuccess" element={<accountSuccess />} /> */}
+        {/* LOGIN FLOW */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/setPassword" element={<SetPassword />} />
+        <Route path="/enterEmail" element={<EnterEmail />} />
+        <Route path="/createID" element={<CreateID />} />
+        <Route path="/accountSuccess" element={<AccountSuccess />} />
       </Routes>
       <Footer />
     </BrowserRouter>
