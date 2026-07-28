@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import LogoImg from '../../assets/login/Login-logo.svg'
 
-function SetPassword () {
+function SetPasswordComponent () {
     const navigate = useNavigate()
 
     const [password, setNewPassword] = useState('')
@@ -70,4 +70,4 @@ function SetPassword () {
     )
 }
 
-export default SetPassword
+export default SetPasswordComponent

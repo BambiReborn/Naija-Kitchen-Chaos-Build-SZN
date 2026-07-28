@@ -1,10 +1,10 @@
 import '../styles/Login.css'
-import '../components/LoginFlow/AccountSuccess'
+import AccountSuccessComponent from '../components/LoginFlow/AccountSuccessComponent';
 
 function AccountSuccess () {
     return (
-        <div className="accountSuccessPage">
-            <AccountSuccess />
+        <div>
+            <AccountSuccessComponent />
         </div>
     );
 }

@@ -1,10 +1,10 @@
 import '../styles/Login.css'
-import '../components/LoginFlow/CreateID'
+import CreateIDComponent from '../components/LoginFlow/CreateIDComponent';
 
 function CreateID () {
     return (
-        <div className="createID">
-            <CreateID />
+        <div>
+            <CreateIDComponent />
         </div>
     );
 }

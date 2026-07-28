@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom";
 import LogoImg from '../../assets/login/Login-logo.svg'
 
-function Signup () {
+function SignupComponent () {
     const navigate = useNavigate()
 
     const [month, setMonth] = useState('')
@@ -75,4 +75,4 @@ function Signup () {
     )
 }
 
-export default Signup
+export default SignupComponent

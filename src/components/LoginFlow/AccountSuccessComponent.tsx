@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import LogoImg from '../../assets/login/Login-logo.svg'
 
-function AccountSuccess () {
+function AccountSuccessComponent () {
     const navigate = useNavigate()
 
     return (
@@ -41,4 +41,4 @@ function AccountSuccess () {
     );
 }
 
-export default AccountSuccess
+export default AccountSuccessComponent

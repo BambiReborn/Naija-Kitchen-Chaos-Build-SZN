@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import LogoImg from '../../assets/login/Login-logo.svg'
 
-function Login () {
+function LoginComponent () {
     const [email, setEmail] = useState ('')
     const [password, setPassword] = useState('')
 
@@ -63,4 +63,4 @@ function Login () {
     )
 }
 
-export default Login
+export default LoginComponent

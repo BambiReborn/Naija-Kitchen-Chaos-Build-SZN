@@ -1,10 +1,10 @@
 import '../styles/Login.css'
-import '../components/LoginFlow/SetPassword'
+import SetPasswordComponent from '../components/LoginFlow/SetPasswordComponent';
 
 function SetPassword () {
     return (
-        <div className="setPasswordPage">
-            <SetPassword />
+        <div>
+            <SetPasswordComponent />
         </div>
     );
 }

@@ -1,10 +1,10 @@
 import '../styles/Login.css'
-import '../components/LoginFlow/Signup'
+import SignupComponent from '../components/LoginFlow/SignupComponent';
 
 function Signup () {
     return (
-        <div className="signupPage">
-            <Signup />
+        <div>
+            <SignupComponent />
         </div>
     );
 }

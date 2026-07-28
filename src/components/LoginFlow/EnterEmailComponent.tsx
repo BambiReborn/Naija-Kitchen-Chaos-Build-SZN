@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import LogoImg from '../../assets/login/Login-logo.svg'
 import CheckboxImg from '../../assets/login/checkbox.svg'
 
-function EnterEmail () {
+function EnterEmailComponent () {
     const navigate = useNavigate()
     const [email, setEmail] = useState ('')
 
@@ -71,4 +71,4 @@ function EnterEmail () {
     )
 }
 
-export default EnterEmail
+export default EnterEmailComponent

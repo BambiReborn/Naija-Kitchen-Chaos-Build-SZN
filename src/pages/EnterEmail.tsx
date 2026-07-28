@@ -1,10 +1,10 @@
 import '../styles/Login.css'
-import '../components/LoginFlow/EnterEmail'
+import EnterEmailComponent from '../components/LoginFlow/EnterEmailComponent';
 
 function EnterEmail () {
     return (
-        <div className="enterEmailPage">
-            <EnterEmail />
+        <div>
+            <EnterEmailComponent />
         </div>
     );
 }
