@@ -1,7 +1,7 @@
-import Characters from "./pages/Characters";
+import About from "./pages/About";
 
 function App() {
-  return <Characters />;
+  return <About />;
 }
 
 export default App;
