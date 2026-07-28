@@ -49,7 +49,7 @@ function Login () {
                     <div className="loginButtonwithTextCont">
                         <p className="textWithUnderline">Need Help Signing In?</p>
 
-                        <div className="otherButttonCont">
+                        <div className="otherButtonCont">
                             <p className="othersButtonText">Don't have an account?</p>
                             <Link to="/Signup1" className="othersButton">Sign up</Link>
                         </div>

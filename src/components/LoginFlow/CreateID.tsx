@@ -15,8 +15,8 @@ function CreateID () {
     }
 
     return (
-        <section className="signupPage">
-            <div className="signupForm">
+        <section className="loginPage">
+            <div className="loginForm">
 
                 <div className="loginLogo">
                     <img src={LogoImg} alt="" />
@@ -28,7 +28,7 @@ function CreateID () {
                 </div>
 
                 <form onSubmit={handleSubmit}>
-                    <div className="createIDInputCont">
+                    <div className="loginInputCont">
 
                         <div className="labelInputCont">
                             <p className="labelText">Username</p>

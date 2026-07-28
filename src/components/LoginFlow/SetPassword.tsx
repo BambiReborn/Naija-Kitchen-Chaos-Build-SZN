@@ -17,19 +17,19 @@ function SetPassword () {
     }
 
     return (
-        <section className="signupPage">
-            <div className="signupForm">
+        <section className="loginPage">
+            <div className="loginForm">
 
-                <div className="LoginLogo">
+                <div className="loginLogo">
                     <img src={LogoImg} alt="" />
                 </div>
 
-                <div className="LoginTextCont">
-                    <h5 className="LoginText">Set your password</h5>
-                    <div className="LoginLine"></div>
+                <div className="loginTextCont">
+                    <h5 className="loginText">Set your password</h5>
+                    <div className="loginLine"></div>
                 </div>
 
-                <div className="setPasswordInputCont">
+                <div className="loginInputCont">
                     <div className="labelInputContain">
                         <div className="labelInputCont">
                             <p className="labelText">New Password</p>
