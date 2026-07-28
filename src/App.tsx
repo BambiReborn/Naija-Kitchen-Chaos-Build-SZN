@@ -27,12 +27,12 @@ function App() {
         <Route path="/characters" element={<Characters />} />
         <Route path="/download" element={<Download />} />
         {/* LOGIN FLOW */}
-        <Route path="/loginComponent" element={<LoginComponent />} />
-        <Route path="/signupComponent" element={<SignupComponent />} />
-        <Route path="/setPasswordComponent" element={<SetPasswordComponent />} />
-        <Route path="/enterEmailComponent" element={<EnterEmailComponent />} />
-        <Route path="/createIDComponent" element={<CreateIDComponent />} />
-        <Route path="/accountSuccessComponent" element={<AccountSuccessComponent />} />
+        <Route path="/login" element={<LoginComponent />} />
+        <Route path="/signup" element={<SignupComponent />} />
+        <Route path="/setPassword" element={<SetPasswordComponent />} />
+        <Route path="/enterEmail" element={<EnterEmailComponent />} />
+        <Route path="/createID" element={<CreateIDComponent />} />
+        <Route path="/accountSuccess" element={<AccountSuccessComponent />} />
       </Routes>
       <Footer />
     </BrowserRouter>
