@@ -6,12 +6,12 @@ import Community from './pages/Community'
 import Characters from './pages/Characters'
 import Download from './pages/Download'
 // LOGIN FLOW//
-// import Login from './pages/Login'
-// import Signup from './pages/Signup'
-// import SetPassword from './pages/SetPassword'
-// import EnterEmail from './pages/EnterEmail'
-// import CreateID from './pages/CreateID'
-// import AccountSuccess from './pages/AccountSuccess'
+import LoginComponent from './pages/LoginComponent'
+import SignupComponent from './pages/SignupComponent'
+import SetPasswordComponent from './pages/SetPasswordComponent'
+import EnterEmailComponent from './pages/EnterEmailComponent'
+import CreateIDComponent from './pages/CreateIDComponent'
+import AccountSuccessComponent from './pages/AccountSuccessComponent'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -27,12 +27,12 @@ function App() {
         <Route path="/characters" element={<Characters />} />
         <Route path="/download" element={<Download />} />
         {/* LOGIN FLOW */}
-        {/* <Route path="/login" element={<Login />} /> */}
-        {/* <Route path="/signup" element={<Signup />} /> */}
-        {/* <Route path="/setPassword" element={<SetPassword />} /> */}
-        {/* <Route path="/enterEmail" element={<EnterEmail />} /> */}
-        {/* <Route path="/createID" element={<CreateID />} /> */}
-        {/* <Route path="/accountSuccess" element={<AccountSuccess />} /> */}
+        <Route path="/loginComponent" element={<LoginComponent />} />
+        <Route path="/signupComponent" element={<SignupComponent />} />
+        <Route path="/setPasswordComponent" element={<SetPasswordComponent />} />
+        <Route path="/enterEmailComponent" element={<EnterEmailComponent />} />
+        <Route path="/createIDComponent" element={<CreateIDComponent />} />
+        <Route path="/accountSuccessComponent" element={<AccountSuccessComponent />} />
       </Routes>
       <Footer />
     </BrowserRouter>
