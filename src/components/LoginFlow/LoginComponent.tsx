@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import LogoImg from '../../assets/login/Login-logo.svg'
 
-function Login () {
+function LoginComponent () {
     const [email, setEmail] = useState ('')
     const [password, setPassword] = useState('')
 
@@ -11,18 +12,20 @@ function Login () {
     }
 
     return (
-        <section className="LoginPage">
-            <div className="LoginForm">
+        <section className="loginPage">
+            <div className="loginForm">
 
-                <div className="LoginLogo"></div>
+                <div className="loginLogo">
+                    <img src={LogoImg} alt="" />
+                </div>
 
-                <div className="LoginTextCont">
-                    <h5 className="LoginText">Sign into your Naija Chaos account</h5>
-                    <div className="LoginLine"></div>
+                <div className="loginTextCont">
+                    <h5 className="loginText">Sign into your Naija Chaos account</h5>
+                    <div className="loginLine"></div>
                 </div>
 
                 <form onSubmit={handleSubmit}>
-                    <div className="LoginInputCont">
+                    <div className="loginInputCont">
                     <input 
                         type="email"
                         placeholder="Email address"
@@ -40,13 +43,13 @@ function Login () {
                     />
                 </div>
 
-                <div className="LoginButtonwithText">
+                <div className="loginButtonwithText">
                     <button type="submit" className="primaryButton">Sign in</button>
 
                     <div className="loginButtonwithTextCont">
                         <p className="textWithUnderline">Need Help Signing In?</p>
 
-                        <div className="otherButttonCont">
+                        <div className="otherButtonCont">
                             <p className="othersButtonText">Don't have an account?</p>
                             <Link to="/Signup1" className="othersButton">Sign up</Link>
                         </div>
@@ -60,4 +63,4 @@ function Login () {
     )
 }
 
-export default Login
+export default LoginComponent

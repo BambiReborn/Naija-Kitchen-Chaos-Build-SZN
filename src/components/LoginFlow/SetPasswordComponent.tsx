@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import LogoImg from '../../assets/login/Login-logo.svg'
 
-function SetPassword () {
+function SetPasswordComponent () {
     const navigate = useNavigate()
 
     const [password, setNewPassword] = useState('')
@@ -12,21 +13,23 @@ function SetPassword () {
             alert('Passwords do not match')
             return
         }
-        navigate('/login')
+        navigate('/createID')
     }
 
     return (
-        <section className="signupPage">
-            <div className="signupForm">
+        <section className="loginPage">
+            <div className="loginForm">
 
-                <div className="LoginLogo"></div>
-
-                <div className="LoginTextCont">
-                    <h5 className="LoginText">Set your password</h5>
-                    <div className="LoginLine"></div>
+                <div className="loginLogo">
+                    <img src={LogoImg} alt="" />
                 </div>
 
-                <div className="setPasswordInputCont">
+                <div className="loginTextCont">
+                    <h5 className="loginText">Set your password</h5>
+                    <div className="loginLine"></div>
+                </div>
+
+                <div className="loginInputCont">
                     <div className="labelInputContain">
                         <div className="labelInputCont">
                             <p className="labelText">New Password</p>
@@ -67,4 +70,4 @@ function SetPassword () {
     )
 }
 
-export default SetPassword
+export default SetPasswordComponent
