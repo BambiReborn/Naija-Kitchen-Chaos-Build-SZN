@@ -5,7 +5,7 @@ import community from "../../assets/about/Community.png";
 import culture from "../../assets/about/Culture.png";
 import excitement from "../../assets/about/Excitement.png";
 
-import chefImage from "../../assets/about/values-Chef.png";
+import chefImage from "../../assets/about/Values-Chef.png";
 
 export default function Values() {
   return (
