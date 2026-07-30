@@ -1,5 +1,5 @@
 import "../styles/Characters.css";
-import logo from '../assets/shared/Logo.svg'
+// import logo from '../assets/shared/Logo.svg'
 
 import CurrencyBar from "../components/Character/CurrencyBar";
 import CharacterList from "../components/Character/CharacterList";
@@ -10,6 +10,8 @@ import GoldFrame from "../components/Character/GoldFrame";
 
 import { useState } from "react";
 import { characters } from "../data/characters";
+
+import { Link } from "react-router-dom";
 
 export default function Characters() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,9 +37,7 @@ export default function Characters() {
 
       <header className="characters-header">
 
-        <div className="game-logo">
-          <img src={logo} alt="Naija Kitchen Chaos | NKC" />
-        </div>
+        <Link to="/" id='back-home'>HOME</Link>
 
         <CurrencyBar />
 
