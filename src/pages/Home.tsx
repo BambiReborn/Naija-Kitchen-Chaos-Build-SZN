@@ -4,20 +4,24 @@ import CTAButton from '../components/CTAButton'
 import bubblyMan from '../assets/home/bubbly male chef.png'
 import bubblyLady from '../assets/home/bubbly female chef.png'
 
+// POLYGON-BODER //
+import PolygonBorder from '../components/PolygonBorder'
+
 // MEET THE CHEF CARDS //
 import ChefCards from '../components/ChefCards'
 import emeka from '../assets/home/chef-emeka.png'
-import chinedu from '../assets/home/chef-chinedu.png'
 import ngozi from '../assets/home/ngozi.png'
+import chinedu from '../assets/home/chinedu.png'
+import mamaNkechi from '../assets/home/mama-nkechi.png'
 import tunde from '../assets/home/chef-tunde.png'
-import AIChef from '../assets/home/AI chef.png'
 
 const chefs = [
     { image: emeka, name: 'EMEKA', role: 'The Veteran', description: 'Years of experience and zero tolerance for nonsense' },
-    { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feet. Always three steps ahead.' },
-    { image: ngozi, name: 'NGOZI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
-    { image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.' },
-    { image: AIChef, name: 'AI-SOUS CHEF', role: 'The Digital Assistant', description: 'Smart, helpful and doesn\'t complain.' },
+    { image: ngozi, name: 'MAMA NGOZI', role: 'The Digital Assistant', description: 'Smart, helpful and doesn\'t complain.' },
+    { image: chinedu, name: 'CHINEDU', role: 'The Speedster', description: 'Fast hands, faster feets. Always three steps ahead.' },
+    { image: mamaNkechi, name: 'MAMA NKECHI', role: 'The Organizer', description: 'Neat and the reason the team don\'t fall apart.' },
+    {image: tunde, name: 'TUNDE', role: 'The wild card', description: 'Chaos? what chaos? Tunde just wants to have fun.'}
+
 ]
 
 // GAME FEATURES SECTION //
@@ -85,39 +89,9 @@ function Home() {
 
             <div id='imageSide'>
                
-                <svg
-                    className="aboutBorder"
-                    viewBox="0 0 1200 420"
-                    preserveAspectRatio="none"
-                    aria-hidden="true"
-                >
-                    <path
-                        d="
-                        M30 20
-                        H410
-                        L455 55
-                        H745
-                        L790 20
-                        H1170
-                        L1195 45
+               {/* POLYGONBORDER */}
+                <PolygonBorder />
 
-                        V375
-
-                        L1170 400
-
-                        H790
-                        L745 365
-                        H455
-                        L410 400
-                        H30
-
-                        L5 375
-
-                        V45
-
-                        Z"
-                    />
-                </svg>
                 <img src={bubblyMan} id='bubblyMan' alt="Nigerian Chef" />
 
                 <div id='aboutGame-text'>
@@ -135,7 +109,12 @@ function Home() {
                         complete chaos
                     </p>
 
-                    <CTAButton text="DOWNLOAD" href="https://studioultra.itch.io/naija-kitchen-chaos" className="downloadBTN" />
+                    <CTAButton 
+                        text="DOWNLOAD" 
+                        href="/download"
+                        internal
+                        className="downloadBTN" 
+                    />
                 </div>
 
                 <img src={bubblyLady} id='bubblyLady' alt="Nigerian Lady" />
@@ -299,39 +278,9 @@ function Home() {
         <section id='joinCommunity-section'>
             
             <div id='content-wrapper'>
-                <svg
-                className="aboutBorder"
-                viewBox="0 0 1200 420"
-                preserveAspectRatio="none"
-                aria-hidden="true"
-                >
-                    <path
-                        d="
-                        M30 20
-                        H410
-                        L455 55
-                        H745
-                        L790 20
-                        H1170
-                        L1195 45
-
-                        V375
-
-                        L1170 400
-
-                        H790
-                        L745 365
-                        H455
-                        L410 400
-                        H30
-
-                        L5 375
-
-                        V45
-
-                        Z"
-                    />
-                </svg>
+                
+                {/* POLYGONBORDER */}
+                <PolygonBorder />
 
                 <div id='communityText'>
                     <h4>COOK TOGETHER, WIN TOGETHER.</h4>

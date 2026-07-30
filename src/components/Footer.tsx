@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/shared/Logo.svg'
 import '../styles/Footer.css'
 
@@ -22,6 +22,9 @@ function Footer() {
       setSubmitted(true)
     }
   }
+
+  const location = useLocation()
+  if (location.pathname === '/login') return null
 
   return (
     <footer>
@@ -47,7 +50,7 @@ function Footer() {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/leaderboard">Levels</Link></li>
                 <li><Link to="/characters">Characters</Link></li>
-                <li><a href="#" target="_blank">Download</a></li>
+                <li><Link to="/download" >Download</Link></li>
             </ul>
             </div>
 
