@@ -51,7 +51,7 @@ function LoginComponent () {
 
                         <div className="otherButtonCont">
                             <p className="othersButtonText">Don't have an account?</p>
-                            <Link to="/Signup1" className="othersButton">Sign up</Link>
+                            <Link to="/Signup" className="othersButton">Sign up</Link>
                         </div>
                     </div>
 
