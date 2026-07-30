@@ -23,6 +23,7 @@ body {
     color: var(--heading-fonts-color);
     font-size: 3em;
     font-weight: 600;
+    margin-top: 5px;
     letter-spacing: 0%;
     line-height: 100%;
 }

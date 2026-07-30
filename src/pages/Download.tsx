@@ -66,7 +66,7 @@ function Download () {
                 </div>
 
                 <div id='heroIMG'>
-                    <img src={heroChefs} alt="" />
+                    <img src={heroChefs} alt="NKC Family" />
                 </div>
             </section>
 
@@ -74,7 +74,7 @@ function Download () {
             <section id='choose-platform'>
                 <div id='line'></div>
 
-                <h3>
+                <h3 id='platform-header'>
                     CHOOSE YOUR PLATFORM
                 </h3>
 
@@ -82,123 +82,130 @@ function Download () {
                 <div id='platforms-wrapper'>
                     {/* WINDOWS */}
                     <div className="download-option">
-                        <i className="fa-brands fa-windows"></i>
+                        <i className="fa-brands fa-windows" id='icons'></i>
                         <h3>WINDOWS</h3>
                         <p>(64-bit)</p>
 
-                        <a href="https://studioultra.itch.io/naija-kitchen-chaos"><i className="fa-solid fa-download"> DOWNLOAD</i>
-</a>
+                        <a href="https://studioultra.itch.io/naija-kitchen-chaos"><i className="fa-solid fa-download"></i> DOWNLOAD
+                        </a>
+
                     </div>
 
                     {/* MAC OS */}
                     <div className="download-option">
-                        <i className="fa-brands fa-apple"></i>
+                        <i className="fa-brands fa-apple" id='icons'></i>
                         <h3>MAC OS</h3>
                         <p>(10,14+)</p>
 
-                        <a href="https://studioultra.itch.io/naija-kitchen-chaos"><i className="fa-solid fa-download"> DOWNLOAD</i>
-</a>
+                        <a href="https://studioultra.itch.io/naija-kitchen-chaos"><i className="fa-solid fa-download"></i> DOWNLOAD
+                        </a>
+
                     </div>
 
                     {/* BROWSER */}
                     <div className="download-option">
-                        <i className="fa-solid fa-globe"></i>
+                        <i className="fa-solid fa-globe" id='icons'></i>
                         
-                        <p>(Browser)</p>
+                        <p id='browser'>(Browser)</p>
 
-                        <a href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos"><i className="fa-solid fa-download"> DOWNLOAD</i>
-</a>
+                        <a href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos"><i className="fa-solid fa-play"></i> PLAY ONLINE
+                        </a> 
+
                     </div>
                 </div>
 
                 {/* SYSTEM REQUIRMENTS */}
-                <table>
-                    <thead>
-                        <tr>
-                            <th colSpan={3}>SYSTEM REQUIRMENTS</th>
-                        </tr>
+                <div id="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colSpan={3}>SYSTEM REQUIREMENTS</th>
+                            </tr>
 
-                        <tr>
-                            <th></th>
-                            <th>MINIMUM</th>
-                            <th>RECOMMENDED</th>
-                        </tr>
-                    </thead>
+                            <tr>
+                                <th></th>
+                                <th>MINIMUM</th>
+                                <th>RECOMMENDED</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr>
-                            <th>OS</th>
-                            <th>Windows 10 (64-bit)</th>
-                            <th>Window 10 (64-bit)</th>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>OS</td>
+                                <td>Windows 10 (64-bit)</td>
+                                <td>Windows 10 (64-bit)</td>
+                            </tr>
 
-                        <tr>
-                            <th>Processor</th>
-                            <th>Intel Core i3-6100</th>
-                            <th>Intel Core i5-8400</th>
-                        </tr>
+                            <tr>
+                                <td>Processor</td>
+                                <td>Intel Core i3-6100</td>
+                                <td>Intel Core i5-8400</td>
+                            </tr>
 
-                        <tr>
-                            <th>Memory</th>
-                            <th>4GB RAM</th>
-                            <th>8GB RAM</th>
-                        </tr>
+                            <tr>
+                                <td>Memory</td>
+                                <td>4GB RAM</td>
+                                <td>8GB RAM</td>
+                            </tr>
 
-                        <tr>
-                            <th>Storage</th>
-                            <th>2GB available space</th>
-                            <th>2GB available space</th>
-                        </tr>
+                            <tr>
+                                <td>Storage</td>
+                                <td>2GB available space</td>
+                                <td>2GB available space</td>
+                            </tr>
 
-                        <tr>
-                            <th>Graphics</th>
-                            <th>GTX660/HD 7850</th>
-                            <th>GTX1060/RX380</th>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>Graphics</td>
+                                <td>GTX660 / HD 7850</td>
+                                <td>GTX1060 / RX380</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
             </section>
 
             
             {/* GAME INFORMATION */}
             <section id="gameInformation">
-                <div className="gameInformation-header">
-                    <h3>GAME INFORMATION</h3>
-                </div>
-
-                <div className="gameInformation-content">
-                    <div className="gameDetails">
-                        <div className="gameDetail">
-                            <h3>Genre:</h3>
-                            <p>Multiplayer</p>
-                        </div>
-
-                        <div className="gameDetail">
-                            <h3>Players:</h3>
-                            <p>1-4 players</p>
-                        </div>
-
-                        <div className="gameDetail">
-                            <h3>Game size:</h3>
-                            <p>1.8GB</p>
-                        </div>
-
-                        <div className="gameDetail">
-                            <h3>Version</h3>
-                            <p>1.0.01</p>
-                        </div>
-
-                        <div className="gameDetail">
-                            <h3>Last updated</h3>
-                            <p>20th, July 2026</p>
-                        </div>
+                <div id='gameInformation-wrapper'>
+                    <div className="gameInformation-header">
+                        <h3>GAME INFORMATION</h3>
                     </div>
 
-                    <div className="gameVideo">
-                        <video controls>
-                            <source src={gameVideo} type="video/mp4" />
-                        </video>
+                    <div className="gameInformation-content">
+                        <div className="gameDetails">
+                            <div className="gameDetail">
+                                <h3>Genre:</h3>
+                                <p>Multiplayer</p>
+                            </div>
+
+                            <div className="gameDetail">
+                                <h3>Players:</h3>
+                                <p>1-4 players</p>
+                            </div>
+
+                            <div className="gameDetail">
+                                <h3>Game size:</h3>
+                                <p>1.8GB</p>
+                            </div>
+
+                            <div className="gameDetail">
+                                <h3>Version</h3>
+                                <p>1.0.01</p>
+                            </div>
+
+                            <div className="gameDetail">
+                                <h3>Last updated</h3>
+                                <p>20th, July 2026</p>
+                            </div>
+                        </div>
+
+                        <div className="gameVideo">
+                            <video controls>
+                                <source src={gameVideo} type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
                 </div>
             </section>

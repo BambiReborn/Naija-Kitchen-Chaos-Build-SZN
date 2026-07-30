@@ -31,7 +31,7 @@ export interface Character {
 }
 
 // Import Character Images
-import MamaNgozi from "../assets/characters/mama-ngozi.png";
+import ChefEmeka from "../assets/characters/chef-emeka.png";
 import ChefTunde from "../assets/characters/chef-tunde.png";
 import ChefChinedu from "../assets/characters/chef-chinedu.png";
 import MamaNkechi from "../assets/characters/mama-nkechi.png";
@@ -39,14 +39,14 @@ import MamaNkechi from "../assets/characters/mama-nkechi.png";
 export const characters: Character[] = [
   {
     id: 1,
-    name: "Mama Ngozi",
+    name: "Chef Emeka",
     subtitle:"Ise Agu",
     attire:"Attire for the chief",
 
-    image:MamaNgozi,
+    image:ChefEmeka,
 
     level:"LEVEL 1 CHEF",
-    description:"Mama Ngozi is the backbone of the kitchen. She keeps ingredients stocked, stations tidy, and every order flowing ...",
+    description:"Chef Emeka is the backbone of the kitchen. She keeps ingredients stocked, stations tidy, and every order flowing ...",
 
     stats: {
       speed: 20,
