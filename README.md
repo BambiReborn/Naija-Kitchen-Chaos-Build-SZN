@@ -23,13 +23,23 @@ Naija Kitchen Chaos is a fast-paced multiplayer cooking game where players team 
 ---
 
 ## 📁 Project Structure
+```text
 src/
-├── pages/  
-│   ├── About.tsx  
-│   ├── Characters.tsx  
-│   ├── Community.tsx  
-│   ├── Home.tsx  
-│   └── Leaderboard.tsx  
+├── App.tsx  
+├── global.d.ts  
+├── index.css  
+├── main.tsx  
+├── vite-env.d.ts  
+├── assets/  
+│   ├── about/  
+│   ├── characters/  
+│   ├── community/  
+│   ├── download/  
+│   ├── home/  
+│   ├── icons/  
+│   ├── leaderboard/  
+│   ├── login/  
+│   └── shared/  
 ├── components/  
 │   ├── ChefCards.tsx  
 │   ├── CTAButton.tsx  
@@ -37,28 +47,71 @@ src/
 │   ├── GameFTsCards.tsx  
 │   ├── Header.tsx  
 │   ├── LatestNewsCard.tsx  
+│   ├── PolygonBorder.tsx  
+│   ├── RankingBoard.tsx  
+│   ├── RankingCards.tsx  
 │   ├── SurviveKitchen.tsx  
-│   └── TournamentCard.tsx  
-├── assets/  
-│   ├── about/  
-│   ├── characters/  
-│   ├── community/  
-│   ├── home/  
-│   ├── leaderboard/  
-│   ├── react.svg  
-│   ├── shared/  
-│   └── vite.svg  
-├── styles/  
-│   ├── About.css  
-│   ├── Characters.css  
-│   ├── Community.css  
-│   ├── Footer.css  
-│   ├── Header.css  
-│   ├── Home.css  
-│   └── Leaderboard.css  
-├── App.tsx  
-├── index.css  
-└── main.tsx  
+│   ├── TournamentCard.tsx  
+│   ├── Character/  
+│   │   ├── CharacterAvatar.tsx  
+│   │   ├── CharacterCard.tsx  
+│   │   ├── CharacterInfo.tsx  
+│   │   ├── CharacterList.tsx  
+│   │   ├── CharacterStats.tsx  
+│   │   ├── CurrencyBar.tsx  
+│   │   ├── GoldFrame.tsx  
+│   │   └── ProgressBar.tsx  
+│   ├── Community/  
+│   │   ├── CommunityCards.tsx  
+│   │   ├── CommunityFAQ.tsx  
+│   │   ├── CommunityHero.tsx  
+│   │   ├── CommunityJoin.tsx  
+│   │   ├── CommunityKitchen.tsx  
+│   │   ├── CommunityMembers.tsx  
+│   │   ├── CommunityNews.tsx  
+│   │   └── CommunityStat.tsx  
+│   └── LoginFlow/  
+│       ├── AccountSuccessComponent.tsx  
+│       ├── CreateIDComponent.tsx  
+│       ├── EnterEmailComponent.tsx  
+│       ├── LoginComponent.tsx  
+│       ├── SetPasswordComponent.tsx  
+│       └── SignupComponent.tsx  
+├── data/  
+│   └── characters.ts  
+├── pages/  
+│   ├── About.tsx  
+│   ├── AccountSuccess.tsx  
+│   ├── Characters.tsx  
+│   ├── Community.tsx  
+│   ├── CreateID.tsx  
+│   ├── Download.tsx  
+│   ├── EnterEmail.tsx  
+│   ├── Home.tsx  
+│   ├── Leaderboard.tsx  
+│   ├── Login.tsx  
+│   ├── SetPassword.tsx  
+│   └── Signup.tsx  
+└── styles/  
+    ├── About.css  
+    ├── Characters.css  
+    ├── Community.css  
+    ├── Download.css  
+    ├── Footer.css  
+    ├── Header.css  
+    ├── Home.css  
+    ├── Leaderboard.css  
+    ├── Login.css  
+    └── Character/  
+        ├── CharacterAvatar.css  
+        ├── CharacterCard.css  
+        ├── CharacterInfo.css  
+        ├── CharacterList.css  
+        ├── CharacterStats.css  
+        ├── CurrencyBar.css  
+        ├── GoldFrame.css  
+        └── ProgressBar.css  
+```
 
 ---
 
