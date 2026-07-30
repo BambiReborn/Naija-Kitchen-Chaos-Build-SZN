@@ -5,7 +5,7 @@ import community from "../../assets/about/Community.png";
 import culture from "../../assets/about/Culture.png";
 import excitement from "../../assets/about/Excitement.png";
 
-import chefImage from "../../assets/about/Values-Chef.png";
+import valuesChef from "../../assets/about/values-chef.png";
 
 export default function Values() {
   return (
@@ -43,7 +43,7 @@ export default function Values() {
         />
 
         <div className="values-chef">
-          <img src={chefImage} alt="Chef" />
+          <img src={valuesChef} alt="Chef" />
         </div>
 
         <ValueCard
