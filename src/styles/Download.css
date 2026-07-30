@@ -1,0 +1,444 @@
+
+/* body {
+    margin: 0px 80px 0px 80px;
+} */
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#write-up h1 {
+    text-align: center;
+    color: var(--heading-fonts-color);
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0%;
+    line-height: 100%;
+    margin-top: 30px;
+}
+
+#write-up h2 {
+    text-align: center;
+    color: var(--heading-fonts-color);
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 5px;
+    letter-spacing: 0%;
+    line-height: 100%;
+}
+
+#heroIMG img {
+    width: clamp(60%, 60vw, 100%);
+}
+
+
+/* CHOOSE PLATFORM SECTION */
+#choose-platform {
+    margin-top: 80px;
+}
+
+#line {
+    display: flex;
+    align-items: center;
+    
+}
+
+#line::before, #line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #FFB54D;
+
+}
+
+#platform-header {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FFB54D;
+
+}
+
+#platforms-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 80px;
+}
+
+.download-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+    width: 13rem;
+    height: 15rem;
+    /* border: 1px solid #FFF; */
+}
+
+.download-option #icons {
+    font-size: 4rem;
+    color: #FFFF;
+}
+
+.download-option h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFB54D;
+    margin-top: 5px;
+}
+
+.download-option p {
+    font-size: 1.1rem;
+    color: var(--pTags-font-color);
+}
+
+#browser {
+    margin-top: 20px;
+}
+
+.download-option a {
+    font-size: .8rem;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    text-decoration: none;
+    padding: 10px;
+    width: 10rem;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #FFB54D;
+    color: #201616;
+}
+
+.download-option a:hover {
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
+
+/* SYSTEM REQUIREMENTS */
+#table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+table {
+    width:80%;
+    border:0.08rem solid #FFB54D;
+    border-radius:1rem;
+    border-collapse:separate;
+    border-spacing:0;
+    overflow:hidden;
+}
+
+th, td {
+    padding:1.2rem 2rem;
+    vertical-align:middle;
+    text-align:left;
+}
+
+thead tr:first-child th {
+    text-align:center;
+    color:#FFF;
+    font-size:2rem;
+    font-weight:700;
+    padding:1rem 2rem;
+    border-bottom:0.08rem solid #FFB54D;
+}
+
+thead tr:nth-child(2) th {
+    color:#FFB54D;
+    font-size:1.25rem;
+    font-weight:700;
+    border-bottom:0.08rem solid #FFB54D;
+}
+
+thead tr:nth-child(2) th:first-child {
+    color:transparent;
+}
+
+tbody td {
+    border-bottom:0.08rem solid #FFB54D;
+    font-size:1.1rem;
+}
+
+tbody tr:last-child td {
+    border-bottom:none;
+}
+
+table tbody tr td:first-child{
+    color: var(--pTags-font-color);
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+table tbody tr td:nth-child(2){
+    color:#FFF;
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+table tbody tr td:nth-child(3){
+    color:#FFF;
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+
+/* GAME INFORMATION */
+#gameInformation {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#gameInformation-wrapper {
+    border: 1px solid #FFB54D;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.gameInformation-header {
+    border-bottom: 1px solid #FFB54D;
+    padding: 1em;
+    /* margin-top: 20px; */
+}
+
+.gameInformation-header h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+    color: var(--heading-fonts-color);
+}
+
+.gameInformation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+}
+
+.gameDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+}
+
+.gameDetail h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFB54D;
+
+}
+
+.gameDetail p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--pTags-font-color);
+}
+
+.gameVideo {
+    width: 50rem;
+    border: 1px solid #FFB54D;
+    border-radius: 20px;
+}
+
+.gameVideo video {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* GAME REVIEW SECTION */
+#gameReview{
+    width:90%;
+    margin:5rem auto;
+}
+
+#gameReview h2{
+    color:#fff;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:2rem;
+}
+
+.reviewSlider{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.reviewImages{
+    width:88%;
+    overflow:hidden;
+}
+
+.reviewImages-track{
+    display:flex;
+    gap:1.5rem;
+    transition:transform .5s ease;
+}
+
+.reviewImages-track img{
+    width:48%;
+    flex-shrink:0;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border:.1rem solid #FFB54D;
+    border-radius:1rem;
+}
+
+.sliderButton{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:3rem;
+    height:3rem;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:#FFB54D;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+    z-index:10;
+}
+
+.previousButton{
+    left:-1rem;
+}
+
+.nextButton{
+    right:-1rem;
+}
+
+.sliderButton:hover{
+    background:#FFB54D;
+    color:#241816;
+}
+
+
+
+/* TEAM SECTION */
+.teamSection{
+    position:relative;
+    width:100%;
+    margin:5rem auto;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.teamScroll{
+    width:min(75%,50rem);
+    height:auto;
+    display:block;
+    margin-top: 80px;
+}
+
+.teamContent{
+    position:absolute;
+    top:60%;
+    left:60.5%;
+    transform:translate(-50%,-50%);
+    width:38%;
+    text-align:left;
+}
+
+.teamContent h3{
+    color: var(--green-color);
+    font-size:clamp(.9rem,1vw,1.2rem);
+    font-weight:700;
+    font-family: 'Irish Grover';
+    margin-bottom:.5rem;
+    text-transform:uppercase;
+}
+
+.teamContent p{
+    color: #201616;
+    font-size:clamp(.75rem,.9vw,1rem);
+    line-height:1.45;
+    font-weight:600;
+    margin:0;
+    font-family: 'Irish Grover';
+}
+
+
+/* WHY DOWNLOAD NKC */
+#whyNKC-section{
+    width:90%;
+    margin:6rem auto;
+    margin-top: 150px;
+}
+
+#whyNKC-heading{
+    text-align:center;
+    margin-bottom:3rem;
+}
+
+#whyNKC-heading h3{
+    color:#FFB54D;
+    font-size:clamp(2rem,2.5vw,3rem);
+    font-weight:700;
+    margin:0;
+}
+
+#contents-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:2rem;
+}
+
+.content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.content img{
+    width:clamp(4rem,20vw,10rem);
+    height:auto;
+    margin-bottom:1rem;
+}
+
+.content h3{
+    color:#FFFFFF;
+    font-size:clamp(1.1rem,1.3vw,1.5rem);
+    font-weight:700;
+    margin-bottom:.7rem;
+}
+
+.content p{
+    color: var(--pTags-font-color);
+    font-size:clamp(.9rem,1vw,1rem);
+    line-height:1.4;
+    margin:0;
+}
+
+.content-divider{
+    width:.08rem;
+    align-self:stretch;
+    background: #5a4744;
+}
