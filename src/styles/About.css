@@ -111,7 +111,7 @@ body {
 .about-intro-frame{
     position:relative;
 
-    width:100%;
+    width:711px;
     max-width:1030px;
     height:250px;
 
@@ -354,7 +354,7 @@ body {
 .story-frame {
     position: relative;
 
-    width: 820px;
+    width: 891px;
     min-height: 300px;
 
     background: url("../assets/about/gold-border2.svg") no-repeat center;
