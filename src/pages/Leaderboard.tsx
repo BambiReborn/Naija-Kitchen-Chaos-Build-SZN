@@ -6,6 +6,10 @@ import RankingCards from '../components/RankingCards'
 import firstPosition from '../assets/leaderboard/gold-1st.png'
 import secondPosition from '../assets/leaderboard/gold-2nd.png'
 import thirdPosition from '../assets/leaderboard/gold-3rd.png'
+
+// HEADING //
+import CTAButton from '../components/CTAButton'
+
 // PLAYERS //
 import proCook from '../assets/leaderboard/ranking-proCook.png'
 import emeka12 from '../assets/leaderboard/ranking-emeka12.png'
@@ -57,8 +61,35 @@ function Leaderboard () {
                     points= {1988}
                 
                 />
+
             </section>
 
+            <div id='heading-wrapper'>
+                <h3>
+                    Your Next Cooking Challenge Awaits You!
+                </h3>
+
+                <p>
+                    Join thousands of players and experiance the excitement of Nigerian inspired<br />
+                    cooperative cooking.
+                </p>
+
+                <div id='heading-CTAs'>
+                    <CTAButton 
+                        text = "LOGIN"
+                        href = "/login"
+                        internal
+                        className = "heading-login"
+                    />
+
+                   <CTAButton 
+                        text = "SIGN UP"
+                        href = "/Signup"
+                        internal
+                        className = "heading-signup"
+                   />
+                </div>
+            </div>
 
             {/* RANKING BOARD SECTION */}
             <section id='rankBoard-section'>

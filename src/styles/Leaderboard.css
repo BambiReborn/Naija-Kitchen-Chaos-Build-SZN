@@ -137,6 +137,80 @@
 }
 
 
+/* HEADING */
+#heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.3rem;
+}
+
+#heading-wrapper h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--heading-fonts-color);
+}
+
+#heading-wrapper p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--pTags-font-color);
+}
+
+/* CTAS */
+#heading-CTAs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heading-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-color2);
+    width: 7rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid var(--BTNs-bg-and-borders-orange);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.heading-login:hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FFB54D;
+}
+
+.heading-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 7rem;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.heading-signup:hover {
+    background-color: #ffb54d9d;
+    border-bottom: 1px solid #FFB54D;
+}
+
 /* RANKING BOARD SECTION */
 /* ..................... */
 
