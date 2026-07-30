@@ -43,7 +43,7 @@ export default function Values() {
         />
 
         <div className="values-chef">
-          <img src={chefImage} alt="Chef" />
+          <img src={valuesChef} alt="Chef" />
         </div>
 
         <ValueCard
