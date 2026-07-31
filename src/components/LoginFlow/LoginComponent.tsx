@@ -15,32 +15,40 @@ function LoginComponent () {
         <section className="loginPage">
             <div className="loginForm">
 
-                <div className="loginLogo">
+                <Link to="/" className="loginLogo">
                     <img src={LogoImg} alt="" />
-                </div>
+                </Link>
 
                 <div className="loginTextCont">
                     <h5 className="loginText">Sign into your Naija Chaos account</h5>
                     <div className="loginLine"></div>
                 </div>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="loginFormFields">
                     <div className="loginInputCont">
-                    <input 
-                        type="email"
-                        placeholder="Email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="loginInput"
-                    />
 
-                    <input 
-                        type="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        className="loginInput"
-                    />
+                        <div className="inputGroup">
+                            <p className="inputLabel">Email Address</p>
+                            <input 
+                                type="email"
+                                placeholder="Email address"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="loginInput"
+                            />
+                        </div>
+
+                        <div className="inputGroup">
+                            <p className="inputLabel">Password</p>
+                            <input 
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                className="loginInput"
+                            />
+                        </div>
+                    
                 </div>
 
                 <div className="loginButtonwithText">

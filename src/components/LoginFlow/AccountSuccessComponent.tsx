@@ -5,9 +5,9 @@ function AccountSuccessComponent () {
     const navigate = useNavigate()
 
     return (
-        <section className="accountSuccess">
-
-            <div className="loginLogo">
+        <section className="loginPage">
+            <div className="loginForm">
+                <div className="loginLogo">
                 <img src={LogoImg} alt="" />
             </div>
 
@@ -37,6 +37,7 @@ function AccountSuccessComponent () {
                 <button className="secondaryButton" onClick={() => navigate('/')}>Go to home</button>
             </div>
 
+            </div>
         </section>
     );
 }

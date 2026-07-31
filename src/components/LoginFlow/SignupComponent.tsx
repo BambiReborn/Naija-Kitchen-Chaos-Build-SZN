@@ -18,9 +18,9 @@ function SignupComponent () {
         <section className="loginPage">
             <div className="loginForm">
 
-                <div className="loginLogo">
+                <Link to="/" className="loginLogo">
                     <img src={LogoImg} alt="" />
-                </div>
+                </Link>
 
                 <div className="loginTextCont">
                     <h5 className="loginText">Create your account</h5>
@@ -31,8 +31,8 @@ function SignupComponent () {
                     <div className="labelInputCont">
                         <p className="labelText">Date of birth</p>
 
-                        <div className="labelInput">
-                            <select value={month} onChange={(e) => setMonth(e.target.value)}>
+                        <div className="dobInputRow">
+                            <select className="labelInput" value={month} onChange={(e) => setMonth(e.target.value)}>
                                 <option value="">Month</option>
                                 <option value="01">January</option>
                                 <option value="02">February</option>
@@ -42,11 +42,11 @@ function SignupComponent () {
                                 <option value="12">December</option>
                             </select>
 
-                            <select value={day} onChange={(e) => setDay(e.target.value)}>
+                            <select className="labelInput" value={day} onChange={(e) => setDay(e.target.value)}>
                                 <option value="">Day</option>{Array.from({ length: 31 }, (_,i) => i + 1).map((d) => (<option key={d} value={d}>{d}</option>))}
                             </select>
 
-                            <select value={year} onChange={(e) => setYear(e.target.value)}>
+                            <select className="labelInput" value={year} onChange={(e) => setYear(e.target.value)}>
                                 <option value="">Year</option>{Array.from({ length: 100 }, (_, i) => 2026 - i).map ((y) => (<option key={y} value={y}>{y}</option>))}
                             </select>
 
@@ -55,14 +55,13 @@ function SignupComponent () {
 
                     <div className="labelInputCont">
                         <p className="labelText">Country/Region</p>
-                        <div className="labelInput">
-                            <select value={country} onChange={(e) => setCountry(e.target.value)}>
-                                <option value="">Select Country</option>
-                                <option value="NG">Nigeria</option>
-                                <option value="GH">Ghana</option>
-                                <option value="US">United States</option>
-                            </select>
-                        </div>
+                        <select className="labelInput countrySelect" value={country} onChange={(e) => setCountry(e.target.value)}>
+                            <option value="">Select Country</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="GH">Ghana</option>
+                            <option value="US">United States</option>
+                         </select>
+                        
                     </div>
                 </div>
 
