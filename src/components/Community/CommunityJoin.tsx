@@ -22,7 +22,7 @@ function CommunityJoin () {
                         From Jollof battles to Suya showdowns - Naija Kitchen chaos community is always lit.</p>
                     </div>
 
-                    <button className="primaryButton">JOIN COMMUNITY</button>
+                    <button className="primaryButton joinButton">JOIN COMMUNITY</button>
                 </div>
 
                 <div className="joinTodayImage">

@@ -58,7 +58,7 @@ function SetPasswordComponent () {
 
                         {error && <p className="errorText">{error}</p>}
 
-                        <button className="primaryButton" onClick={handleNext}>Next</button>
+                        <button className="loginPrimaryButton" onClick={handleNext}>Next</button>
                         
                     </div>
                 </div>

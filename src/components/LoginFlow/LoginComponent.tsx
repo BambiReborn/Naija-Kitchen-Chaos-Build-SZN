@@ -52,7 +52,7 @@ function LoginComponent () {
                 </div>
 
                 <div className="loginButtonwithText">
-                    <button type="submit" className="primaryButton">Sign in</button>
+                    <button type="submit" className="loginPrimaryButton">Sign in</button>
 
                     <div className="loginButtonwithTextCont">
                         <p className="textWithUnderline">Need Help Signing In?</p>

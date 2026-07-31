@@ -33,9 +33,9 @@ function AccountSuccessComponent () {
                 </div>
 
                 <div className="accountButtonCont">
-                    <button className="primaryButton" onClick={() => navigate('/login')}>Sign in</button>
+                    <button className="loginPrimaryButton" onClick={() => navigate('/login')}>Sign in</button>
 
-                    <button className="secondaryButton" onClick={() => navigate('/')}>Go to home</button>
+                    <button className="loginSecondaryButton" onClick={() => navigate('/')}>Go to home</button>
                 </div>
 
             </div>

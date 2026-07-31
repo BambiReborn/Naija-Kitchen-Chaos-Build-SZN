@@ -79,7 +79,7 @@ function EnterEmailComponent () {
 
                     {error && <p className="errorText">{error}</p>}
 
-                    <button type="submit" className="primaryButton">Next</button>
+                    <button type="submit" className="loginPrimaryButton">Next</button>
 
                 </form>
                 

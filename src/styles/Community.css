@@ -24,11 +24,11 @@ span {
 .communityButtonCont {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 16px;
 }
 
 .primaryButton {
-    background-color: #FFB54D;
+    /* background-color: #FFB54D;
     padding: 12px 28px;
     border-radius: 5px;
     cursor: pointer;
@@ -39,18 +39,32 @@ span {
     align-items: center;
     gap: 8px;
     width: fit-content;
+    transition: all 0.3s ease-in; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: fit-content;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
     transition: all 0.3s ease-in;
+    cursor: pointer;
+    gap: 4px;
 }
 
-/* .primaryButton:hover {
+.primaryButton:hover {
     background-color: #ffb54d9d;
-    border: 1px solid transparent;
-    border-bottom: #FFB54D;
-} */
+    border-bottom: 1px solid #FFB54D;
+}
 
 .primaryButton img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
 .secondaryButton {
@@ -63,19 +77,20 @@ span {
     border: 1px solid #FFC16B;
     display: flex;
     align-items: center;
-    gap: 8px;
+    width: fit-content;
+    gap: 4px;
     color: #F9F9F9;
     transition: all 0.3s ease-in;
 }
 
-/* .secondaryButton:hover {
-    border: 1px soid transparent;
-    border-bottom: #FFB54D;
-} */
+.secondaryButton:hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FFB54D;
+}
 
 .secondaryButton img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
 
@@ -83,19 +98,38 @@ span {
 .joinToday {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    /* flex-direction: row; */
-    min-height: 393px;
-    /* background-image: url('../assets/community/banner-border.svg'); */
-    /* background-repeat: no-repeat; */
-    background-size: 100% 100%;
-    padding: 80px 0 0 65px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0 20px 80px;
+    gap: 40px;
+}
+
+.joinButton {
+    width: fit-content;
+    padding: 0.8em 1.5em;
+}
+
+.polygonBorder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.polygonBorder path {
+    fill: none;
+    stroke: #FFB54D;
+    stroke-width: 2;
 }
 
 .joinTodayLeft {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: flex-start;
 }
 
 .joinTextContainer {
