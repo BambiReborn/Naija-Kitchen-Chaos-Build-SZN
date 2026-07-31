@@ -103,7 +103,7 @@ body:has(.loginPage) {
     justify-content: center;
 }
 
-.primaryButton {
+.loginPrimaryButton {
     /*width: 100%;
     border-radius: 12px;
     background-color: #FFB54D;
@@ -130,7 +130,7 @@ body:has(.loginPage) {
     cursor: pointer;
 }
 
-.secondaryButton {
+.loginSecondaryButton {
     /*border-radius: 12px;
     background-color: #553C1ACC;
     padding: 8px 16px;

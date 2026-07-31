@@ -10,7 +10,7 @@ function SetPasswordComponent () {
     const [retypePassword, setRetypePassword] = useState('')
     const [error, setError] = useState('')
 
-    const handleNext = () => {
+    const handleSubmit = () => {
         if (signupData.password !== retypePassword) {
             setError('Passwords do not match')
             return
@@ -26,42 +26,44 @@ function SetPasswordComponent () {
                     <img src={LogoImg} alt="" />
                 </Link>
 
-                <div className="loginTextCont">
-                    <h5 className="loginText">Set your password</h5>
-                    <div className="loginLine"></div>
-                </div>
-
-                <div className="loginInputCont">
-                    <div className="labelInputContain setPasswordCont">
-                        <div className="labelInputCont">
-                            <p className="labelText">New Password</p>
-                            <input type="password"
-                                value={signupData.password}
-                                onChange={(e) => updateSignupData({ password: e.target.value })} className="loginInput"
-                            />
-                        </div>
-
-                        <div className="labelErrorContain">
-                            <p className="labelErrorText">X 8-30 characters long</p>
-                            <p className="labelErrorText">X Contain atleast 1 letter and 1 number</p>
-                            <p className="labelErrorText">X May not contain sequential characters  e.g 123,abc</p>
-                            <p className="labelErrorText">X May only contain valid characters e.g aaaa</p>
-                        </div>
-
-                        <div className="labelInputCont">
-                            <p className="labelText">Retype Password</p>
-                            <input type="password"
-                                value={retypePassword}
-                                onChange={(e) => setRetypePassword(e.target.value)} className="loginInput"
-                            />
-                        </div>
-
-                        {error && <p className="errorText">{error}</p>}
-
-                        <button className="primaryButton" onClick={handleNext}>Next</button>
-                        
+                <form onSubmit={handleSubmit}>
+                    <div className="loginTextCont">
+                        <h5 className="loginText">Set your password</h5>
+                        <div className="loginLine"></div>
                     </div>
-                </div>
+
+                    <div className="loginInputCont">
+                        <div className="labelInputContain setPasswordCont">
+                            <div className="labelInputCont">
+                                <p className="labelText">New Password</p>
+                                <input type="password"
+                                    value={signupData.password}
+                                    onChange={(e) => updateSignupData({ password: e.target.value })} className="loginInput"
+                                />
+                            </div>
+
+                            <div className="labelErrorContain">
+                                <p className="labelErrorText">X 8-30 characters long</p>
+                                <p className="labelErrorText">X Contain atleast 1 letter and 1 number</p>
+                                <p className="labelErrorText">X May not contain sequential characters  e.g 123,abc</p>
+                                <p className="labelErrorText">X May only contain valid characters e.g aaaa</p>
+                            </div>
+
+                            <div className="labelInputCont">
+                                <p className="labelText">Retype Password</p>
+                                <input type="password"
+                                    value={retypePassword}
+                                    onChange={(e) => setRetypePassword(e.target.value)} className="loginInput"
+                                />
+                            </div>
+
+                            {error && <p className="errorText">{error}</p>}
+
+                            <button type="submit" className="loginPrimaryButton">Next</button>
+                        
+                        </div>
+                    </div>
+                </form>
             </div>
 
         </section>

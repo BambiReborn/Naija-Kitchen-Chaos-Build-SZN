@@ -63,7 +63,7 @@ function CreateIDComponent () {
 
                     </div>
 
-                    <button type="submit" className="primaryButton">Next</button>
+                    <button type="submit" className="loginPrimaryButton">Next</button>
 
                 </form>
 
