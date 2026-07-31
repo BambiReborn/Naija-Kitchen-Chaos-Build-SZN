@@ -1,4 +1,8 @@
 /* Login Style */
+body:has(.loginPage) {
+    margin: 0;
+}
+
 .loginPage {
     background-image: url('../assets/login/login-background.png');
     background-size: cover;
@@ -8,37 +12,49 @@
     align-items: center;
     justify-content: flex-end;
     min-height: 100vh;
-    padding-left: 125px;
 }
 
 .loginForm {
     background-color: #553C1ACC;
     border-radius: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 64px;
+    margin: 20px 40px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 44px;
+    gap: 36px;
     align-items: center;
+    justify-content: center;
+    width: 528px;
 }
 
 .loginTextCont {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
 }
+
 
 .loginText {
     font-weight: 600;
     font-size: 32px;
     color: white;
+    width: 80%;
 }
 
 .loginLine {
     border-radius: 1px;
     background-color: #45B400;
     width: 100%;
+    height: 2px;
+}
+
+.loginFormFields {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 80%;
 }
 
 .loginInputCont {
@@ -48,69 +64,130 @@
     max-width: 393px;
 }
 
-.loginInput {
+.inputGroup {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.inputLabel {
+    font-size: 16px;
+    font-weight: 400;
+    color: #F9F9F9;
+}
+
+.loginInput {
     width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #ADACAC;
+    background-color: #332F2F;
+    color: #F9F9F9;
+    font-size: 16px;
+    outline: none;
+}
+
+.loginInput::placeholder {
+    color: #ADACAC;
+}
+
+.loginInput:focus {
+    border: 1px solid #FFB54D;
 }
 
 .loginButtonwithText {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
     align-items: center;
+    justify-content: center;
 }
 
 .primaryButton {
+    /*width: 100%;
     border-radius: 12px;
     background-color: #FFB54D;
-    padding: 8px 16px;
+    padding: 12px 16px;
     color: #070404;
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-and-borders-orange);
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 
 .secondaryButton {
-    border-radius: 12px;
+    /*border-radius: 12px;
     background-color: #553C1ACC;
     padding: 8px 16px;
     color: #070404;
     border: 1px solid #FFC16B;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--BTN-writeUp);
+    background-color: var(--BTNs-bg-color2);
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid var(--BTNs-bg-and-borders-orange);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
 
 .textWithUnderline {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
     text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
 }
 
 .otherButtonCont {
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 8px;
     align-items: center;
+    justify-content: center;
 }
 
 .othersButtonText {
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 20px;
     color: white;
 }
 
 .othersButton {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFB54D;
 }
 
 
 /* SignUp Style */
 .labelInputCont {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -118,18 +195,39 @@
 
 .labelText {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     color: #F9F9F9;
 }
 
+.dobInputRow {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+}
+
 .labelInput {
-    padding: 4px 12px;
+    padding: 10px 12px;
     background-color: #332F2F;
     border: 1px solid #ADACAC;
     border-radius: 4px;
     color: #ADACAC;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.dobInputRow .labelInput {
+    flex: 1;
+}
+
+.countrySelect {
+    width: 100%;
+}
+
+.labelInput:focus {
+    border: 1px solid #FFB54D;
 }
 
 /* Enter Email */
@@ -138,7 +236,27 @@
     flex-direction: row;
     gap: 12px;
     align-items: flex-start;
+    cursor: pointer;
+    user-select: none;
 }
+
+.submitFormFields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/*.loginInputCont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.labelInputCont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+} */
 
 .acceptCheckbox img {
     width: 20px;
@@ -151,6 +269,12 @@
     color: white;
 }
 
+.errorText {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 /* Set Password */
 .labelErrorContain {
     display: flex;
@@ -158,10 +282,28 @@
     gap: 12px;
 }
 
+.labelInputContain {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.labelInputCont {
+    gap: 8px;
+}
+
+.setPasswordCont {
+    gap: 32px;
+}
+
 .labelErrorText {
     font-weight: 400;
     font-size: 16px;
     color: #F9F9F9;
+}
+
+.createIDContent {
+    width: 80%;
 }
 
 /* Account Success */
@@ -208,4 +350,5 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 80%;
 }

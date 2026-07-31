@@ -1,16 +1,18 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
+import { useSignup } from "./SignupContext"
 import LogoImg from '../../assets/login/Login-logo.svg'
 
 function SetPasswordComponent () {
     const navigate = useNavigate()
-
-    const [password, setNewPassword] = useState('')
+    const { signupData, updateSignupData } = useSignup()
+    //const [password, setNewPassword] = useState('')
     const [retypePassword, setRetypePassword] = useState('')
+    const [error, setError] = useState('')
 
     const handleNext = () => {
-        if (password !== retypePassword) {
-            alert('Passwords do not match')
+        if (signupData.password !== retypePassword) {
+            setError('Passwords do not match')
             return
         }
         navigate('/createID')
@@ -20,9 +22,9 @@ function SetPasswordComponent () {
         <section className="loginPage">
             <div className="loginForm">
 
-                <div className="loginLogo">
+                <Link to="/" className="loginLogo">
                     <img src={LogoImg} alt="" />
-                </div>
+                </Link>
 
                 <div className="loginTextCont">
                     <h5 className="loginText">Set your password</h5>
@@ -30,16 +32,13 @@ function SetPasswordComponent () {
                 </div>
 
                 <div className="loginInputCont">
-                    <div className="labelInputContain">
+                    <div className="labelInputContain setPasswordCont">
                         <div className="labelInputCont">
                             <p className="labelText">New Password</p>
-
-                            <div className="labelInput">
-                                <input type="password"
-                                value={password}
-                                onChange={(e) => setNewPassword(e.target.value)}
-                             />
-                            </div>
+                            <input type="password"
+                                value={signupData.password}
+                                onChange={(e) => updateSignupData({ password: e.target.value })} className="loginInput"
+                            />
                         </div>
 
                         <div className="labelErrorContain">
@@ -51,14 +50,13 @@ function SetPasswordComponent () {
 
                         <div className="labelInputCont">
                             <p className="labelText">Retype Password</p>
-
-                            <div className="labelInput">
-                                <input type="password"
+                            <input type="password"
                                 value={retypePassword}
-                                onChange={(e) => setRetypePassword(e.target.value)}
-                             />
-                            </div>
+                                onChange={(e) => setRetypePassword(e.target.value)} className="loginInput"
+                            />
                         </div>
+
+                        {error && <p className="errorText">{error}</p>}
 
                         <button className="primaryButton" onClick={handleNext}>Next</button>
                         
