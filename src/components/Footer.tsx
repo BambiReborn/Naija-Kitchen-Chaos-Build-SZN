@@ -24,7 +24,7 @@ function Footer() {
   }
 
   const location = useLocation()
-  if (location.pathname === '/login') return null
+  if (location.pathname === '/login' || location.pathname === '/Signup') return null
 
   return (
     <footer>

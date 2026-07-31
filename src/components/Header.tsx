@@ -6,7 +6,7 @@ import logo from '../assets/shared/Logo.svg'
 function Header() {
   // REMOVING HEADER FROM BOTH PAGES //
   const location = useLocation()
-  if (location.pathname === '/characters' || location.pathname === '/login' || location.pathname === '/Signup') return null
+  if (location.pathname === '/characters' || location.pathname === '/login' || location.pathname === '/Signup' || location.pathname === '/EnterEmail' || location.pathname === '/CreateID' || location.pathname === '/SetPassword') return null
 
   // 
 
