@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { useSignup } from "./SignupContext"
 import LogoImg from '../../assets/login/Login-logo.svg'
 
@@ -22,9 +22,9 @@ function SetPasswordComponent () {
         <section className="loginPage">
             <div className="loginForm">
 
-                <div className="loginLogo">
+                <Link to="/" className="loginLogo">
                     <img src={LogoImg} alt="" />
-                </div>
+                </Link>
 
                 <div className="loginTextCont">
                     <h5 className="loginText">Set your password</h5>

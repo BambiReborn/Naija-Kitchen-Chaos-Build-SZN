@@ -1,12 +1,14 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
+import { useSignup } from "./SignupContext"
 import LogoImg from '../../assets/login/Login-logo.svg'
 import CheckboxImg from '../../assets/login/checkbox.svg'
 import CheckboxCheckedImg from '../../assets/login/checkedboxImg.svg'
 
 function EnterEmailComponent () {
     const navigate = useNavigate()
-    const [email, setEmail] = useState ('')
+    const { signupData, updateSignupData } = useSignup()
+    //const [email, setEmail] = useState ('')
     const [retypeEmail, setRetypeEmail] = useState ('')
     const [agreed, setAgreed] = useState(false)
     const [error, setError] = useState('')
@@ -15,7 +17,7 @@ function EnterEmailComponent () {
         e.preventDefault()
         setError('')
 
-        if (email !== retypeEmail) {
+        if (signupData.email !== retypeEmail) {
             setError('Emails do not match')
             return
         }
@@ -32,9 +34,9 @@ function EnterEmailComponent () {
         <section className="loginPage">
             <div className="loginForm">
 
-                <div className="loginLogo">
+                <Link to="/" className="loginLogo">
                     <img src={LogoImg} alt="" />
-                </div>
+                </Link>
 
                 <div className="loginTextCont">
                     <h5 className="loginText">Create your account</h5>
@@ -50,8 +52,8 @@ function EnterEmailComponent () {
                             <input 
                                 type="email"
                                 placeholder="Email Address"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                value={signupData.email}
+                                onChange={(e) => updateSignupData({ email: e.target.value })}
                                 className="loginInput"
                             />
                         
