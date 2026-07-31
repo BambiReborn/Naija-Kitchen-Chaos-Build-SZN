@@ -59,7 +59,7 @@ function LoginComponent () {
 
                         <div className="otherButtonCont">
                             <p className="othersButtonText">Don't have an account?</p>
-                            <Link to="/Signup" className="othersButton">Sign up</Link>
+                            <Link to="/signup" className="othersButton">Sign up</Link>
                         </div>
                     </div>
 

@@ -67,7 +67,7 @@ function SignupComponent () {
 
                 <button className="loginPrimaryButton" onClick={handleNext}>Next</button>
 
-                <p className="othersButtonText">Already have an account?</p><Link to="/Login"className="othersButton">Sign In</Link>
+                <p className="othersButtonText">Already have an account?</p><Link to="/login" className="othersButton">Sign In</Link>
 
             </div>
         </section>
