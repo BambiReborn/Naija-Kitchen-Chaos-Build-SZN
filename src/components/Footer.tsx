@@ -24,7 +24,9 @@ function Footer() {
   }
 
   const location = useLocation()
-  if (location.pathname === '/login' || location.pathname === '/Signup') return null
+  const hiddenFooterRoutes = ['/login', '/signup', '/enterEmail', '/createID', '/setPassword', '/accountSuccess']
+
+  if (hiddenFooterRoutes.includes(location.pathname)) return null
 
   return (
     <footer>

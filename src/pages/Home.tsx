@@ -83,7 +83,8 @@ function Home() {
 
                 <nav>
                     <CTAButton text="PLAY NOW" href="https://play.unity.com/en/games/6e324785-a61c-4f2d-845d-a983e36ae2ce/naija-kitchen-chaos" className="textSide-playNow"/>
-                    <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="#" className="textSide-watchTrailer" />
+                    
+                    <CTAButton text={<><i className="fa-regular fa-circle-play"></i> WATCH TRAILER</>} href="https://youtu.be/hiM78nrF9yo?si=lkzRKhjm1UT2esq1" className="textSide-watchTrailer" />
                 </nav>
             </div>
 
