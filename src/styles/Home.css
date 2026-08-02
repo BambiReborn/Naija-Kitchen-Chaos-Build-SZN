@@ -95,7 +95,9 @@ body {
     align-items:center;
 }
 
-.polygonBorder{
+/* HERO POLYGON */
+
+#imageSide .polygonBorder{
     position:absolute;
     left:5%;
     right:5%;
@@ -108,7 +110,7 @@ body {
     z-index:0;
 }
 
-.polygonBorder path{
+#imageSide .polygonBorder path{
     fill:none;
     stroke:#FFB54D;
     stroke-width:2.3;
@@ -658,7 +660,9 @@ body {
     align-items:center;
 }
 
-.polygonBorder{
+/* JOIN COMMUNITY POLYGON */
+
+#joinCommunity-section #content-wrapper .polygonBorder{
     position:absolute;
     left:5%;
     right:5%;
@@ -671,7 +675,7 @@ body {
     z-index:0;
 }
 
-.polygonBorder path{
+#joinCommunity-section #content-wrapper .polygonBorder path{
     fill:none;
     stroke:#FFB54D;
     stroke-width:2.3;
@@ -932,4 +936,361 @@ body {
 
 /* //RESPONSIVE LAYOUTS// */
 /* ====================== */
+
+/* SCREEN 1600px */
+
+
+@media (max-width: 1600px){
+
+    /* HERO */
+
+    #heroSection{
+        height:auto;
+        padding-bottom:5rem;
+    }
+
+    #textSide h1,
+    #textSide h2{
+        font-size:2.8rem;
+    }
+
+    #imageSide{
+        max-width:78rem;
+        height:25rem;
+    }
+
+    #aboutGame-text{
+        width:42%;
+    }
+
+    #bubblyMan{
+        width:29%;
+    }
+
+    #bubblyLady{
+        width:30%;
+    }
+
+
+    /* CHEFS */
+
+    .cards{
+        min-width:24%;
+    }
+
+    .cards img{
+        width:68%;
+    }
+
+    .writeUp-wrapper h3{
+        font-size:1.35rem;
+    }
+
+    .writeUp-wrapper p{
+        font-size:1rem;
+    }
+
+
+    /* GAME FEATURES */
+
+    #fire-cheff-wrapper{
+        max-width:45%;
+    }
+
+    .centerLeft{
+        left:22%;
+    }
+
+    .topRight{
+        left:52%;
+    }
+
+    .bottomRight{
+        left:52%;
+    }
+
+
+    /* TOURNAMENT */
+
+    .tournamentCard{
+        width:80%;
+    }
+
+
+    /* TOP PLAYERS */
+
+    .topPlayers-img-div{
+        width:17%;
+    }
+
+
+    /* COMMUNITY */
+
+    #joinCommunity-section #content-wrapper{
+        max-width:78rem;
+        height:25rem;
+    }
+
+    #communityImg{
+        width:24%;
+    }
+
+
+    /* NEWS */
+
+    .newsCard{
+        width:19rem;
+    }
+
+}
+
+
+
+
+/* SCREEN 1440px */
+
+@media (max-width:1441px){
+
+    /* HERO */
+
+    #textSide h1,
+    #textSide h2{
+        font-size:2.5rem;
+    }
+
+    #imageSide{
+        height:23rem;
+    }
+
+    #aboutGame-text{
+        width:46%;
+    }
+
+    #aboutGame-text h3{
+        font-size:1.8rem;
+    }
+
+    #aboutGame-text p{
+        font-size:.95rem;
+    }
+
+    #bubblyMan{
+        width:30%;
+    }
+
+    #bubblyLady{
+        width:31%;
+    }
+
+
+    /* CHEFS */
+
+    .cards{
+        min-width:31%;
+    }
+
+
+    /* FEATURES */
+
+    #fire-cheff-wrapper{
+        max-width:42%;
+    }
+
+    .gameFTCards{
+        width:18rem;
+        height:11rem;
+    }
+
+    .centerLeft{
+        left:26%;
+    }
+
+    .topRight{
+        left:50%;
+    }
+
+    .bottomRight{
+        left:50%;
+    }
+
+
+    /* TOURNAMENT */
+
+    .players-side img{
+        width:22%;
+    }
+
+    .players-side .vs-text{
+        font-size:3rem;
+    }
+
+
+    /* TOP PLAYERS */
+
+    .topPlayers-img-div{
+        width:18%;
+    }
+
+
+    /* COMMUNITY */
+
+    #communityImg{
+        width:26%;
+    }
+
+
+    /* NEWS */
+
+    #newsCards-wrapper{
+        gap:1rem;
+    }
+
+    .newsCard{
+        width:18rem;
+    }
+
+}
+
+
+
+
+/* SCREEN 1280px */
+
+@media (max-width:1281px){
+
+    /* HERO */
+
+    #heroSection{
+        margin-top:2rem;
+    }
+
+    #textSide h1,
+    #textSide h2{
+        font-size:2.2rem;
+    }
+
+    #imageSide{
+        height:21rem;
+    }
+
+    #aboutGame-text{
+        width:50%;
+    }
+
+    #aboutGame-text h4{
+        font-size:1.1rem;
+    }
+
+    #aboutGame-text h3{
+        font-size:1.6rem;
+    }
+
+    #aboutGame-text p{
+        font-size:.9rem;
+    }
+
+    #bubblyMan{
+        width:31%;
+    }
+
+    #bubblyLady{
+        width:32%;
+    }
+
+
+    /* CHEFS */
+
+    .cards{
+        min-width:48%;
+    }
+
+    .scroll-btn-left{
+        left:-1rem;
+    }
+
+    .scroll-btn-right{
+        right:-1rem;
+    }
+
+
+    /* FEATURES */
+
+    #fire-cheff-wrapper{
+        max-width:38%;
+    }
+
+    .gameFTCards{
+        width:16rem;
+        height:10rem;
+    }
+
+    .gameFTCards h3{
+        font-size:1rem;
+    }
+
+    .gameFTCards p{
+        font-size:.9rem;
+    }
+
+    .centerLeft{
+        left:15%;
+    }
+
+    .topRight{
+        left:56%;
+    }
+
+    .bottomRight{
+        left:56%;
+    }
+
+
+    /* TOURNAMENT */
+
+    .tournamentCard{
+        width:90%;
+        gap:2rem;
+    }
+
+
+    /* TOP PLAYERS */
+
+    #topPlayers-images{
+        gap:1rem;
+    }
+
+    .topPlayers-img-div{
+        width:19%;
+    }
+
+
+    /* COMMUNITY */
+
+    #joinCommunity-section #content-wrapper{
+        height:21rem;
+    }
+
+    #communityImg{
+        width:28%;
+    }
+
+
+    /* NEWS */
+
+    .newsCard{
+        width:17rem;
+    }
+
+
+    /* SURVIVE */
+
+    #btn-side{
+        gap:1rem;
+    }
+
+}
+
+
+
+
 
